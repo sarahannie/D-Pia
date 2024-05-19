@@ -3,6 +3,7 @@ import AuthorImage from '/hr-author.png'
 import Card1 from '/card-image-1.png'
 import Card2 from '/card-image-2.png'
 import Card3 from '/card-image-3.png'
+import { Compass, Shield, Trophy, Lightbulb } from 'lucide-react'
 const data = [{
 	image: Card1,
 	title: 'Skill Acquisition',
@@ -34,4 +35,27 @@ const data = [{
 		image: AuthorImage
 	}
 }]
-export default data
+export default data;
+
+export const values = [
+	{
+		Icon: Compass,
+		heading: "Proactivity",
+		body: "Anticipating needs and taking initiative to create positive outcomes",
+	},
+	{
+		Icon: Shield,
+		heading: "Integrity",
+		body: "Upholding honesty, transparency, and ethical behavior in all endeavors"
+	},
+	{
+		Icon: Trophy,
+		heading: "Excellence",
+		body: "Striving for the highest standards of quality and continuous improvement"
+	},
+	{
+		Icon: Lightbulb,
+		heading: "Innovation",
+		body: "Fostering a culture of creativity and embracing forward-thinking solutions"
+	}
+]
