@@ -3,6 +3,8 @@ import Home from './pages/Home.page';
 
 import NavBar from './components/Navbar';
 
+import Footer from './components/Footer';
+
 export default function App() {
   const location = useLocation();
   return (
@@ -11,6 +13,7 @@ export default function App() {
       <main className='mt-14'>
         {location.pathname === '/' ? <Home /> : <Outlet />}
       </main>
+      <Footer />
     </div>
   );
 }

@@ -55,7 +55,7 @@ export default function Home() {
           <div className='flex flex-col items-center justify-center gap-2 px-6 pt-20 md:px-40'>
             <div className='flex flex-col items-center md:flex-row'>
               <div className='md:w-4/5'>
-                <div className='flex flex-col gap-4 text-white'>
+                <div className='flex flex-col gap-4 text-center text-white md:text-left'>
                   <h1 className='text-4xl font-bold md:text-5xl lg:text-7xl'>
                     <p>Unlocking Potential Through Technology</p>
                   </h1>
@@ -63,7 +63,7 @@ export default function Home() {
                     Transforming {"Africa's"} Future: Inclusive ICT Skill
                     Acquisition and Technology Adoption
                   </p>
-                  <button className='bg-[#C4320A] w-36 font-semibold py-3 text-xl rounded-md'>
+                  <button className='bg-[#C4320A] md:w-36 font-semibold py-3 text-xl rounded-md'>
                     Get In Touch
                   </button>
                 </div>
@@ -89,7 +89,7 @@ export default function Home() {
         <section>
           <div className='flex flex-wrap justify-between px-6 md:px-40 mt-16 text-[#0B4A6F]'>
             <div className='w-full md:w-2/5'>
-              <h2 className='mb-4 text-2xl font-semibold md:text-3xl'>
+              <h2 className='mb-4 text-2xl font-bold text-center md:text-3xl md:text-left'>
                 Who We Are
               </h2>
               <div className='flex flex-col text-lg gap-y-2'>
@@ -119,7 +119,7 @@ export default function Home() {
                   of the top drivers of inclusive ICT skill acquisition and
                   technology adoption for education and business in Africa.
                 </p>
-                <button className='bg-[#C4320A] w-32 font-medium py-2 text-lg rounded-md mt-3 text-white'>
+                <button className='bg-[#C4320A] md:w-32  font-medium py-2 text-lg rounded-md mt-3 text-white'>
                   Learn More
                 </button>
               </div>
@@ -141,7 +141,7 @@ export default function Home() {
             <h3 className='my-4 text-3xl font-semibold md:text-4xl'>
               What we do
             </h3>
-            <p className='w-4/6 text-lg md:text-xl'>
+            <p className='text-lg md:w-4/6 md:text-xl'>
               We train. We enable technology integration. We empower innovation.
               We are dedicated to delivering peace-of-mind to our clients
               through our unwavering commitment to excellent outcomes.
@@ -150,7 +150,7 @@ export default function Home() {
           <div>
             <section className='embla '>
               <div className='embla__viewport' ref={emblaRef}>
-                <div className='embla__container h-[50vh] '>
+                <div className='embla__container h-fit '>
                   <div className='p-4 rounded-lg embla__slide md:p-8'>
                     <div className='flex flex-col items-center gap-8 md:flex-row'>
                       <div className='w-full md:w-1/2'>
@@ -299,8 +299,8 @@ export default function Home() {
           </div>
         </section>
         <section className='bg-[#001F6B] text-white py-20'>
-          <div className='flex h-full gap-8 px-40 '>
-            <div className='flex flex-col w-2/5 h-full pl-5 space-y-4 '>
+          <div className='flex flex-col h-full gap-8 px-4 md:px-40 md:flex-row'>
+            <div className='flex flex-col h-full space-y-4 md:w-2/5 '>
               <h3 className='text-5xl font-semibold md:text-4xl'>
                 Our Culture
               </h3>
@@ -318,10 +318,12 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className='flex flex-col items-center justify-center mt-12 px-40 mb-8 w-full text-[#0B4A6F]'>
-          <div className='flex items-center justify-between w-full'>
-            <div className='flex flex-col'>
-              <h3 className='text-sm font-bold text-orange-600'>Our blog</h3>
+        <section className='flex flex-col  items-center justify-center mt-12 md:px-40 px-4 mb-8 w-full text-[#0B4A6F] h-fit'>
+          <div className='flex flex-col items-center justify-between w-full md:flex-row'>
+            <div className='flex flex-col w-full border-2 md:w-fit'>
+              <h3 className='font-bold text-orange-600 md:text-sm text-md'>
+                Our blog
+              </h3>
               <p className='text-3xl font-semibold text-gray-800'>
                 Latest blog posts
               </p>
@@ -330,13 +332,13 @@ export default function Home() {
                 of technology.
               </p>
             </div>
-            <div className='mr-0'>
+            <div className='w-full border-2 md:ml-auto md:w-fit'>
               <button className='p-3 text-gray-700 border border-gray-400 rounded-md'>
                 View All
               </button>
             </div>
           </div>
-          <div className='flex gap-16 h-[60vh] mt-12'>
+          <div className='flex flex-col gap-16 mt-12 md:flex-row'>
             {data.map((item, idx) => (
               <div key={idx} className='p-4 rounded-md hover:shadow h-fit'>
                 <>

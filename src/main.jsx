@@ -7,7 +7,6 @@ import Home from './pages/Home.page';
 import NotFound from './pages/NotFound.page';
 // import NavBar from './components/Navbar';
 import App from './App';
-import Footer from './components/Footer';
 import PageLayout from './pages/What-We-Do/layout';
 import CodeAcademy from './pages/What-We-Do/pages/code-academy';
 
@@ -50,6 +49,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <>
       <RouterProvider router={router}></RouterProvider>
     </>
-    <Footer />
   </React.StrictMode>
 );
