@@ -1,7 +1,7 @@
 import useClickOutside from '../../hooks/useClickOutside';
 import { useRef, useState, useCallback } from 'react';
 import Logo from '/logo.svg';
-import Icons from '../Icons/Icons';
+import Icons from '../Icons';
 import { Link, useNavigate } from 'react-router-dom';
 
 export default function NavBar() {
@@ -57,7 +57,7 @@ export default function NavBar() {
             </Link>
           </li>
           <li>
-            <Link to='/blog' onClick={() => navigate('/blog')}>
+            <Link to='/blogs' onClick={() => navigate('/blogs')}>
               Blog
             </Link>
           </li>

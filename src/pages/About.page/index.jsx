@@ -2,16 +2,24 @@ import { values } from '../../data';
 import Genesis from '/genesis.png';
 import FadedImage from '/logo-faded.png';
 import HR from '/faith_sunday.png';
+import Icons from '../../components/Icons';
+import EmmanuelOlujobi from '/emmanuel_olujobi.png';
+import DanielBamigbayan from '/daniel_bamigbayan.png';
+import LinkedInIcon from '/linkedin-icon.svg';
+import TwitterIcon from '/twitter-icon.svg';
+import JideFagbuji from '/jide_fagbuji.png';
 
 export default function About() {
+  document.title += ' | Who we are';
+
   return (
     <section>
-      <section className='bg-[#F5FBFF] text-[#0B4A6F] py-20  px-40'>
+      <section className='bg-[#F5FBFF] text-[#0B4A6F] py-20  px-4 lg:px-20 xl:px-40'>
         <div className='flex flex-col gap-8 text-left'>
-          <h1 className='w-3/5 text-5xl font-semibold'>
+          <h1 className='w-full text-3xl font-semibold xl:w-3/5 md:text-5xl'>
             Leading the Technological Revolution in Africa:
           </h1>
-          <p className='w-[50%] text-lg '>
+          <p className='w-full text-base xl:w-1/2 md:text-lg'>
             At D-Pia Innovations, our journey is rooted in a commitment to
             ushering in a new era of technological advancement across Africa.
             Founded with a vision to drive innovation and empower businesses, we
@@ -20,49 +28,53 @@ export default function About() {
           </p>
         </div>
       </section>
-      <section className='mt-10 '>
-        <div className='flex flex-wrap justify-between px-40  h-[80vh] text-[#0B4A6F] py-8'>
-          <div>
+
+      <section className='py-10 lg:py-20'>
+        <div className='flex flex-wrap flex-col-reverse md:flex-row justify-between px-4 lg:px-20 xl:px-40 h-fit  text-[#0B4A6F] gap-y-12'>
+          <div className='w-full xl:w-1/2 hidden xl:block'>
             <img
-              alt='persona layout image'
+              alt='Genesis layout image'
               src={Genesis}
-              className='rounded-md h-fit'
+              className='h-auto rounded-md md:h-fit'
             />
           </div>
-          <div className='w-2/5 '>
-            <h2 className='mb-8 text-5xl font-semibold'>The Genesis</h2>
-            <div className='flex flex-col text-lg font-semibold gap-y-2'>
+          <div className='w-full xl:w-1/2'>
+            <h2 className='mb-8 text-3xl font-semibold md:text-5xl'>
+              The Genesis
+            </h2>
+            <div className='flex flex-col text-base xl:font-semibold md:text-lg gap-y-2'>
               <p>
-                D-Pia Innovations Limited began as a full fledged information
+                D-Pia Innovations Limited began as a full-fledged information
                 technology company but more recently has evolved into a
-                management consulting practice. We are set up to provide
-                technology driven solution to businesses.
+                management consulting practice. We provide technology-driven
+                solutions to businesses.
               </p>
               <p>
-                We provide shared workspace services, business process
-                automation, as well as affordable software development training
-                for the middle and lower class. We also drive operational
-                excellence initiatives for optimal positioning of organizations
+                Our services include shared workspace services, business process
+                automation, and affordable software development training for the
+                middle and lower class. Additionally, we drive operational
+                excellence initiatives for optimal positioning of organizations.
               </p>
               <p>
-                The company started out in 2016 with the purpose to become one
-                of the top drivers of inclusive ICT skill acquisition and
+                The company started in 2016 with the purpose of becoming one of
+                the top drivers of inclusive ICT skill acquisition and
                 technology adoption for education and business in Africa.
               </p>
-              <button className='bg-[#C4320A] w-32 font-medium py-2 text-lg rounded-md mt-3 text-white'>
+              <button className='bg-[#C4320A] w-32 font-medium py-2 text-base md:text-lg rounded-md mt-3 text-white'>
                 Learn More
               </button>
             </div>
           </div>
         </div>
       </section>
-      <section className='bg-[#001F6B] h-fit py-20 flex flex-col text-white px-40 space-y-16'>
+
+      <section className='bg-[#001F6B] h-fit py-10 lg:py-20 flex flex-col text-white lg:px-20 xl:px-40 px-4 space-y-12'>
         <div className='flex items-center justify-between w-full space-x-8'>
-          <div className='flex flex-col w-1/2 space-y-4'>
+          <div className='flex flex-col space-y-4 xl:w-1/2'>
             <div>
-              <h2 className='text-5xl'>Our Mission</h2>
+              <h2 className='text-3xl font-bold xl:text-5xl'>Our Mission</h2>
             </div>
-            <div className='flex flex-col p-2 text-xl font-semibold gap-y-2'>
+            <div className='flex flex-col p-2 text-base xl:font-semibold xl:text-lg gap-y-2'>
               <p>
                 We are more than just a company; we are on a mission to
                 revolutionize how technology transforms lives. Our mandate is to
@@ -88,23 +100,23 @@ export default function About() {
               </>
             </div>
           </div>
-          <div className='right-0 w-1/2 opacity-70'>
+          <div className='right-0 hidden w-1/2 opacity-70 xl:block'>
             <img
               src={FadedImage}
               alt='dpia logo faded'
-              className='object-cover h-full w-[85%]'
+              className='object-cover h-full w-[85%] '
             />
           </div>
         </div>
-        <div className='flex items-center justify-between w-full space-x-8'>
-          <div className='w-1/2'>
+        <div className='flex items-center flex-col justify-between w-full xl:space-x-8'>
+          <div className='hidden w-1/2 xl:block'>
             <img src={FadedImage} alt='dpia logo faded' className='w-[70%] ' />
           </div>
-          <div className='flex flex-col w-1/2 pt-20 space-y-4 '>
+          <div className='flex flex-col space-y-4 xl:w-1/2 '>
             <div>
-              <h2 className='text-5xl'>Our Vision</h2>
+              <h2 className='text-3xl font-bold xl:text-5xl'>Our Vision</h2>
             </div>
-            <div className='flex flex-col p-2 text-xl font-semibold gap-y-2'>
+            <div className='flex flex-col p-2 text-base lg:text-lg gap-y-2'>
               <p>
                 To become one of the top drivers of inclusive ICT skill
                 acquisition and technology adoption for education and business
@@ -115,21 +127,31 @@ export default function About() {
         </div>
       </section>
       <section>
-        <div className='mt-20 px-36'>
-          <div className='flex flex-row gap-8'>
+        <div className='px-4 mt-20 lg:px-20 xl:px-40'>
+          <div className='text-[#0B4A6F] space-y-2'>
+            <h2 className='text-3xl font-bold md:text-4xl'>
+              Organization Values
+            </h2>
+            <p className=' text-lg xl:text-xl'>
+              At D-Pia, our core values define who we are and guide our actions
+            </p>
+          </div>
+          <div className='flex flex-row flex-wrap gap-4 lg:gap-6 xl:gap-8 mt-16'>
             {values.map((item) => {
               const { Icon } = item;
               return (
                 <div
                   key={item.heading}
-                  className='h-[18em] w-[20em] shadow-md flex flex-col justify-between px-6 py-4 bg-[#F5FBFF] text-[#0B4A6F]'
+                  className='w-full lg:w-[14em] xl:h-[18em] xl:w-[18em] h-[14em] shadow-md flex flex-col justify-between px-2 xl:px-6 py-4 bg-[#F5FBFF] text-[#0B4A6F]'
                 >
                   <div className='flex items-center justify-center rounded-full shadow-sm bg-gray-300/50 size-12'>
-                    <Icon className='' />
+                    <Icon className='text-orange-600 fill-yellow-200' />
                   </div>
-                  <div className='space-y-4'>
-                    <h2 className='text-3xl font-semibold'>{item.heading}</h2>
-                    <p className='text-md'>{item.body}</p>
+                  <div className='space-y-2 xl:space-y-4'>
+                    <h2 className='text-xl font-semibold xl:text-3xl'>
+                      {item.heading}
+                    </h2>
+                    <p className='text-base xl:text-md'>{item.body}</p>
                   </div>
                 </div>
               );
@@ -137,30 +159,133 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className='bg-[#001F6B] h-fit py-20 text-white px-40 mt-16'>
+      <section className='bg-[#001F6B] h-fit  py-10 lg:py-20 text-white mt-16'>
         <div className='flex flex-col items-center'>
-          <div className='text-center w-3/5 space-y-3'>
-            <h2 className='text-5xl font-semibold'>
+          <div className='px-4 space-y-3 text-center xl:w-4/5 md:px-20 lg:px-40'>
+            <h2 className='text-xl lg:text-4xl font-semibold xl:text-5xl'>
               Meet the visionary minds steering D-Pia towards a future defined
               by innovation and excellence.
             </h2>
-            <p className='font-normal text-2xl text-white/90'>
+            <p className='font-normal text-md xl:text-xl text-white/90'>
               Explore the profiles of our visionary leaders who are instrumental
               in steering D-Pia towards new heights in the ever-evolving
               landscape of technology and business
             </p>
           </div>
-          <div></div>
+          <div className='mt-8'>
+            <div className='flex flex-wrap items-center justify-center xl:gap-4'>
+              <div className='relative overflow-hidden h-80 w-72 group'>
+                <div>
+                  <img
+                    src={EmmanuelOlujobi}
+                    alt='emmanuel olujobi - profile'
+                    className='object-contain w-72'
+                  />
+                </div>
+                <div className='absolute bottom-2 px-2 py-2 space-y-1 text-left translate-x-[1.3em] bg-gray-400 h-[11em] opacity-100 xl:opacity-0 w-[15.2em] bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 xl:group-hover:translate-y-0 xl:group-hover:opacity-100 transition-all duration-1000'>
+                  <div className='flex items-center w-full text-left'>
+                    <h3 className='font-bold'>Emmanuel Olujobi</h3>
+                    <div className='ml-auto'>
+                      <a href='#' target='_blank'>
+                        <Icons.ArrowUpRight />
+                      </a>
+                    </div>
+                  </div>
+                  <p className='text-sm font-semibold'>
+                    Data Analyst & Program Manager
+                  </p>
+                  <p className='text-sm'>
+                    Multifaceted professional with expertise in data analysis,
+                    program management
+                  </p>
+                  <div className='flex gap-4'>
+                    <a href='#' target='_blank'>
+                      <img src={LinkedInIcon} alt='linkedin icon' />
+                    </a>
+                    <a href='#' target='_blank'>
+                      <img src={TwitterIcon} alt='twitter icon' />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className='relative overflow-hidden h-80 w-72 group'>
+                <div>
+                  <img
+                    src={DanielBamigbayan}
+                    alt='daniel bamigbayan - profile'
+                    className='object-contain w-72'
+                  />
+                </div>
+                <div className='absolute bottom-2 px-2 py-2 space-y-1 text-left translate-x-[1.3em] bg-gray-400 h-[11em] opacity-100 xl:opacity-0 w-[15.2em] bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 xl:group-hover:translate-y-0 xl:group-hover:opacity-100 transition-all duration-1000'>
+                  <div className='flex items-center w-full text-left'>
+                    <h3 className='font-bold'>Daniel Bamigbayan</h3>
+                    <div className='ml-auto'>
+                      <a href='#' target='_blank'>
+                        <Icons.ArrowUpRight />
+                      </a>
+                    </div>
+                  </div>
+                  <p className='text-sm font-semibold'>Founder & CEO</p>
+                  <p className='text-sm'>
+                    A dedicated mentor for the Tony Elumelu Foundation
+                    Entrepreneurship Programme
+                  </p>
+                  <div className='flex gap-4'>
+                    <a href='#' target='_blank'>
+                      <img src={LinkedInIcon} alt='linkedin icon' />
+                    </a>
+                    <a href='#' target='_blank'>
+                      <img src={TwitterIcon} alt='twitter icon' />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className='relative overflow-hidden h-80 w-72 group'>
+                <div>
+                  <img
+                    src={JideFagbuji}
+                    alt='jide fagbuji - profile'
+                    className='object-contain w-72'
+                  />
+                </div>
+                <div className='absolute bottom-2 px-2 py-2 space-y-1 text-left translate-x-[1.3em] bg-gray-400 h-[11em] opacity-100 xl:opacity-0 w-[15.2em] bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 xl:group-hover:translate-y-0 xl:group-hover:opacity-100 transition-all duration-1000'>
+                  <div className='flex items-center w-full text-left'>
+                    <h3 className='font-bold'>Jide Fagbuji</h3>
+                    <div className='ml-auto '>
+                      <a href='#' target='_blank'>
+                        <Icons.ArrowUpRight />
+                      </a>
+                    </div>
+                  </div>
+                  <p className='text-sm font-semibold'>Systems Developer</p>
+                  <p className='text-sm'>
+                    An accomplished Systems Developer with over 7 years of
+                    professional experience.
+                  </p>
+                  <div className='flex self-end gap-4'>
+                    <a href='#' target='_blank'>
+                      <img src={LinkedInIcon} alt='linkedin icon' />
+                    </a>
+                    <a href='#' target='_blank'>
+                      <img src={TwitterIcon} alt='twitter icon' />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section className='bg-[#F5FBFF] text-[#0B4A6F] py-20  px-40'>
-        <div className='flex justify-between items-center'>
-          <div className='w-[21em]'>
-            <p className='text-[#C4320A] font-bold text-sm mb-4'>
+      <section className='bg-[#F5FBFF] text-[#0B4A6F] py-10 lg:py-20 px-4 md:px-20 xl:px-40'>
+        <div className='flex flex-col items-center lg:flex-row h-fit lg:justify-between '>
+          <div className='mb-8 lg:w-1/2 lg:mb-0'>
+            <p className='text-[#C4320A] font-bold text-sm md:text-xl mb-4'>
               The Heartbeat of D-Pia
             </p>
-            <h3 className='font-semibold text-6xl'>Our People</h3>
-            <p className='mt-4 text-sm font-normal'>
+            <h3 className='text-4xl font-semibold lg:text-6xl'>Our People</h3>
+            <p className='mt-4 text-sm font-normal md:text-2xl'>
               At D-Pia Innovations, our strength lies in our people — a
               community of dedicated individuals who share a common passion for
               technology, innovation, and making a positive impact. Our diverse
@@ -168,12 +293,9 @@ export default function About() {
               creating a vibrant and collaborative environment.
             </p>
           </div>
-          <div className='relative ml-0'>
-            <img
-              src={HR}
-              className='w-[21em] rounded-md h-96 object-contain ml-0'
-            />
-            <div className='w-96 bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border-2 border-gray-100 absolute -translate-y-3/4 -translate-x-1/2 h-36 p-2 space-y-2 flex flex-col font-semibold'>
+          <div className='relative lg:ml-0'>
+            <img src={HR} className='w-[21em] rounded-md h-96 object-contain' />
+            <div className='absolute bottom-0 flex flex-col p-2 space-y-2 font-semibold transform bg-gray-800 border-2 border-gray-100 rounded-md xl:-translate-x-1/2 w-[21em]  text-white xl:w-96 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 h-36 xl:transform-none xl:translate-y-0 xl:-left-24 lg:-bottom-4 '>
               <span>
                 &quot;The supportive culture here motivates me to push
                 boundaries and explore new possibilities in the ever-evolving

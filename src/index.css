@@ -1,6 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* fonts */
+.island-moments-regular {
+  font-family: 'Island Moments', cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: proximity;
+  scroll-snap-type: proximity;
+}
 
 .embla {
   overflow: hidden;
@@ -11,4 +25,8 @@
 .embla__slide {
   flex: 0 0 100%;
   min-width: 0;
+}
+
+.debug {
+  @apply border-2 border-red-500;
 }

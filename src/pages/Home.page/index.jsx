@@ -12,6 +12,7 @@ import data from '../../data';
 useEmblaCarousel.globalOptions = { loop: true };
 
 export default function Home() {
+  document.title += ' | Home';
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
     Autoplay({ playOnInit: true, delay: 5000 }),
   ]);
@@ -52,34 +53,34 @@ export default function Home() {
               className='w-full h-screen bg-no-repeat '
             />
           </div>
-          <div className='flex flex-col items-center justify-center gap-2 px-6 pt-20 md:px-40'>
-            <div className='flex flex-col items-center md:flex-row'>
-              <div className='md:w-4/5'>
-                <div className='flex flex-col gap-4 text-center text-white md:text-left'>
-                  <h1 className='text-4xl font-bold md:text-5xl lg:text-7xl'>
+          <div className='flex flex-col items-center justify-center gap-2 px-6 pt-20 xl:px-40'>
+            <div className='flex flex-col items-center xl:flex-row'>
+              <div className='w-full xl:w-4/5'>
+                <div className='flex flex-col gap-4 text-center text-white xl:text-left'>
+                  <h1 className='text-3xl font-bold md:text-6xl xl:text-7xl'>
                     <p>Unlocking Potential Through Technology</p>
                   </h1>
-                  <p className='mt-2 text-2xl text-gray-200 md:text-3xl'>
+                  <p className='mt-2 text-gray-200 text-md md:text-3xl'>
                     Transforming {"Africa's"} Future: Inclusive ICT Skill
                     Acquisition and Technology Adoption
                   </p>
-                  <button className='bg-[#C4320A] md:w-36 font-semibold py-3 text-xl rounded-md'>
+                  <button className='bg-[#C4320A] w-60 mx-auto xl:w-36 font-semibold py-3 text-xl xl:mx-0 rounded-md '>
                     Get In Touch
                   </button>
                 </div>
               </div>
-              <div className='hidden md:block md:w-2/5'>
+              <div className='hidden xl:block lg:w-2/5'>
                 <img src={HeroImage} alt='hero image' />
               </div>
             </div>
-            <div className='flex flex-col items-center justify-center gap-6 mt-4'>
-              <div className='text-2xl font-semibold text-center text-white md:text-3xl'>
+            <div className='flex flex-col items-center justify-center gap-6 mt-4 xl:mt-2'>
+              <div className='text-2xl font-semibold text-center text-white lg:text-3xl'>
                 Our Partners:
               </div>
-              <div className='flex flex-wrap gap-6 mt-4'>
+              <div className='flex flex-wrap justify-center gap-2 xl:gap-6 h-fit'>
                 {Array.from({ length: 5 }).map((_, idx) => (
                   <div key={idx}>
-                    <div className='h-12 bg-gray-400 rounded-md md:h-16 lg:h-20 md:w-40 lg:w-52 w-36'></div>
+                    <div className='w-40 h-12 bg-gray-400 rounded-md lg:h-16 xl:w-48'></div>
                   </div>
                 ))}
               </div>
@@ -87,12 +88,12 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div className='flex flex-wrap justify-between px-6 md:px-40 mt-16 text-[#0B4A6F]'>
-            <div className='w-full md:w-2/5'>
-              <h2 className='mb-4 text-2xl font-bold text-center md:text-3xl md:text-left'>
+          <div className='flex flex-wrap justify-between w-full gap-2 px-6 lg:px-40 py-10 lg:py-20 text-[#0B4A6F]'>
+            <div className='w-full xl:w-[45%] text-balance lg:text-left'>
+              <h2 className='mb-4 text-2xl font-bold text-center lg:text-3xl xl:text-left'>
                 Who We Are
               </h2>
-              <div className='flex flex-col text-lg gap-y-2'>
+              <div className='flex flex-col xl:text-lg text-base xl:text-left gap-y-2'>
                 <p>
                   D-Pia Innovations Limited began as a full fledged information
                   technology company but more recently has evolved into a
@@ -119,12 +120,12 @@ export default function Home() {
                   of the top drivers of inclusive ICT skill acquisition and
                   technology adoption for education and business in Africa.
                 </p>
-                <button className='bg-[#C4320A] md:w-32  font-medium py-2 text-lg rounded-md mt-3 text-white'>
+                <button className='bg-[#C4320A] lg:w-32 font-medium py-2 text-lg rounded-md mt-3 text-white'>
                   Learn More
                 </button>
               </div>
             </div>
-            <div className='w-full mt-8 md:w-2/5 md:mt-0'>
+            <div className='w-full mt-8 xl:w-[50%] flex justify-center xl:mt-0'>
               <img
                 alt='Persona layout image'
                 src={Persona1}
@@ -133,7 +134,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className='flex flex-col items-center justify-center mt-32 px-6 md:px-40 mb-8 text-[#0B4A6F]'>
+        <section className='flex flex-col items-center justify-center py-10 lg:py-20 px-4 xl:px-40 mb-8 text-[#0B4A6F]'>
           <div className='flex flex-col items-center w-full mb-8 text-sm text-center'>
             <p className='text-sm font-bold text-orange-600'>
               Training • Technology • Innovation
@@ -141,7 +142,7 @@ export default function Home() {
             <h3 className='my-4 text-3xl font-semibold md:text-4xl'>
               What we do
             </h3>
-            <p className='text-lg md:w-4/6 md:text-xl'>
+            <p className='xl:text-lg xl:w-4/6 md:text-xl'>
               We train. We enable technology integration. We empower innovation.
               We are dedicated to delivering peace-of-mind to our clients
               through our unwavering commitment to excellent outcomes.
@@ -152,22 +153,22 @@ export default function Home() {
               <div className='embla__viewport' ref={emblaRef}>
                 <div className='embla__container h-fit '>
                   <div className='p-4 rounded-lg embla__slide md:p-8'>
-                    <div className='flex flex-col items-center gap-8 md:flex-row'>
-                      <div className='w-full md:w-1/2'>
+                    <div className='flex flex-col items-center gap-8 lg:flex-row'>
+                      <div className='w-full lg:w-1/2'>
                         <img src={SummaryImage} alt='summary image' />
                       </div>
-                      <div className='w-full md:w-1/2'>
-                        <h3 className='mb-4 text-3xl font-semibold md:text-4xl'>
+                      <div className='w-full lg:w-1/2'>
+                        <h3 className='mb-4 text-3xl font-semibold xl:text-4xl'>
                           D-Pia Coding Academy
                         </h3>
-                        <p className='my-4 text-lg md:text-xl'>
+                        <p className='my-4 text-md xl:text-xl'>
                           The training function of D-Pia Innovations provides
                           ICT training to individuals and employees of clients’
                           organizations.
                         </p>
                         <ul className='list-disc'>
-                          <li className='ml-6 text-lg md:text-xl'>Code2Ace</li>
-                          <li className='ml-6 text-lg md:text-xl'>Code2Earn</li>
+                          <li className='ml-6 text-md xl:text-xl'>Code2Ace</li>
+                          <li className='ml-6 text-md xl:text-xl'>Code2Earn</li>
                         </ul>
                         <button className='px-4 py-2 mt-8 font-semibold bg-gray-200 border-2 rounded-md'>
                           Read more
@@ -176,29 +177,29 @@ export default function Home() {
                     </div>
                   </div>
                   <div className='p-4 rounded-lg embla__slide md:p-8'>
-                    <div className='flex flex-col items-center gap-8 md:flex-row'>
-                      <div className='w-full md:w-1/2'>
+                    <div className='flex flex-col items-center gap-8 lg:flex-row'>
+                      <div className='w-full lg:w-1/2'>
                         <img
                           src={WorkSpaceImage}
                           alt='summary image'
                           className='h-fit'
                         />
                       </div>
-                      <div className='w-full md:w-1/2'>
-                        <h3 className='my-4 text-3xl font-semibold md:text-4xl'>
+                      <div className='w-full lg:w-1/2'>
+                        <h3 className='my-4 text-3xl font-semibold xl:text-4xl'>
                           Shared Workspace Services
                         </h3>
 
                         <ul className='list-disc'>
-                          <li className='ml-6 text-lg md:text-xl'>
+                          <li className='ml-6 text-md xl:text-xl'>
                             Tailored for remote workers, entrepreneurs, and tech
                             enthusiasts.
                           </li>
-                          <li className='ml-6 text-lg md:text-xl'>
+                          <li className='ml-6 text-md xl:text-xl'>
                             Choose from Premium, Standard, conference room,
                             private office, or virtual office packages.
                           </li>
-                          <li className='ml-6 text-lg md:text-xl'>
+                          <li className='ml-6 text-md xl:text-xl'>
                             Experience accessibility, affordability, and an
                             unparalleled shared workspace atmosphere.
                           </li>
@@ -298,52 +299,55 @@ export default function Home() {
             </section>
           </div>
         </section>
-        <section className='bg-[#001F6B] text-white py-20'>
-          <div className='flex flex-col h-full gap-8 px-4 md:px-40 md:flex-row'>
-            <div className='flex flex-col h-full space-y-4 md:w-2/5 '>
-              <h3 className='text-5xl font-semibold md:text-4xl'>
+        <section className='bg-[#001F6B] text-white py-10 lg:py-20 '>
+          <div className='flex flex-col h-full gap-8 px-4 md:px-8 xl:px-40 xl:flex-row'>
+            <div className='flex flex-col justify-center h-full space-y-6 text-center xl:w-1/2'>
+              <h3 className='text-3xl font-semibold xl:text-4xl'>
                 Our Culture
               </h3>
-              <p className='w-full text-lg md:text-xl'>
+              <p className='w-full text-md lg:text-xl'>
                 We believe in the power of innovation to tackle the {`world's`}{' '}
                 most significant challenges. When you join our team, you become
                 a catalyst for change, a pioneer in the realm of possibility.
               </p>
-              <button className='bg-white w-36 font-semibold py-3 text-xl rounded-md text-[#001F6B]'>
+              <button className='bg-white xl:w-36 font-semibold py-3 w-full text-xl rounded-md text-[#001F6B]'>
                 Join Us
               </button>
             </div>
-            <div>
+            <div className='flex justify-center'>
               <img src={OurCultureImage} className='rounded-md' />
             </div>
           </div>
         </section>
-        <section className='flex flex-col  items-center justify-center mt-12 md:px-40 px-4 mb-8 w-full text-[#0B4A6F] h-fit'>
-          <div className='flex flex-col items-center justify-between w-full md:flex-row'>
-            <div className='flex flex-col w-full border-2 md:w-fit'>
+        <section className='flex flex-col items-center xl:justify-center py-10 lg:py-20 xl:px-40 px-4 mb-8 w-full text-[#0B4A6F] h-fit'>
+          <div className='flex flex-col items-center justify-between w-full lg:flex-row'>
+            <div className='flex flex-col w-full md:w-fit'>
               <h3 className='font-bold text-orange-600 md:text-sm text-md'>
                 Our blog
               </h3>
               <p className='text-3xl font-semibold text-gray-800'>
                 Latest blog posts
               </p>
-              <p className='text-2xl'>
+              <p className='xl:text-2xl'>
                 {`we're`} about stories, insights, and the ever-evolving world
                 of technology.
               </p>
             </div>
-            <div className='w-full border-2 md:ml-auto md:w-fit'>
-              <button className='p-3 text-gray-700 border border-gray-400 rounded-md'>
+            <div className='w-full mt-8 xl:ml-auto lg:w-fit lg:mt-0'>
+              <button className='w-full p-3 text-gray-700 border-2 border-gray-400 rounded-md'>
                 View All
               </button>
             </div>
           </div>
-          <div className='flex flex-col gap-16 mt-12 md:flex-row'>
+          <div className='flex flex-wrap w-full mt-12 xl:gap-16 gap-4'>
             {data.map((item, idx) => (
-              <div key={idx} className='p-4 rounded-md hover:shadow h-fit'>
+              <div
+                key={idx}
+                className='p-4 rounded-md hover:shadow h-fit border-2 border-gray-200'
+              >
                 <>
-                  <img src={item.image} className='w-80' />
-                  <div className='mx-2 mt-4 w-72'>
+                  <img src={item.image} className='w-72 xl:w-80 ' />
+                  <div className='w-[16.5em]  mt-4'>
                     <h2 className='my-2 text-sm font-bold text-orange-600'>
                       {item.title}
                     </h2>
@@ -358,12 +362,14 @@ export default function Home() {
                         <img
                           src={item.author.image}
                           alt={`author - ${item.author.name}'s profile`}
-                          className='object-cover rounded-full size-12'
+                          className='object-cover rounded-full size-8 xl:size-12'
                         />
                       </div>
                       <div className='flex flex-col'>
-                        <span className='font-bold'>{item.author.name}</span>
-                        <span className='font-semibold text-gray-500'>
+                        <span className='font-bold max-sm:text-base'>
+                          {item.author.name}
+                        </span>
+                        <span className='font-semibold text-gray-500 max-sm:text-base'>
                           {item.author.date}
                         </span>
                       </div>

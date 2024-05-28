@@ -8,7 +8,10 @@ import NotFound from './pages/NotFound.page';
 // import NavBar from './components/Navbar';
 import App from './App';
 import PageLayout from './pages/What-We-Do/layout';
-import CodeAcademy from './pages/What-We-Do/pages/code-academy';
+import CodeAcademy from './pages/What-We-Do/pages/CodeAcademy';
+import InnovationHub from './pages/What-We-Do/pages/InnovationHub';
+import ManagementConsulting from './pages/What-We-Do/pages/Management-Consulting';
+import TechnologySolutions from './pages/What-We-Do/pages/TechnologySolutions';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +35,18 @@ const router = createBrowserRouter([
             index: true,
             path: '/what-we-do/code-academy',
             element: <CodeAcademy />,
+          },
+          {
+            path: '/what-we-do/innovation-hub',
+            element: <InnovationHub />,
+          },
+          {
+            path: '/what-we-do/management-consulting',
+            element: <ManagementConsulting />,
+          },
+          {
+            path: '/what-we-do/technology-solutions',
+            element: <TechnologySolutions />,
           },
         ],
       },
