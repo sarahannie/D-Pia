@@ -12,6 +12,9 @@ import CodeAcademy from './pages/What-We-Do/pages/CodeAcademy';
 import InnovationHub from './pages/What-We-Do/pages/InnovationHub';
 import ManagementConsulting from './pages/What-We-Do/pages/Management-Consulting';
 import TechnologySolutions from './pages/What-We-Do/pages/TechnologySolutions';
+import CareerPage from './pages/Career.page';
+import PortfolioPage from './pages/Portfolio.page';
+import Blogpage from './pages/Blogs.page';
 
 const router = createBrowserRouter([
   {
@@ -50,13 +53,26 @@ const router = createBrowserRouter([
           },
         ],
       },
+      {
+        path: '/career',
+        element: <CareerPage />,
+      },
+      {
+        path: '/portfolio',
+        element: <PortfolioPage />
+      },
+      {
+        path: '*',
+        element: <NotFound />,
+        errorElement: <NotFound />,
+      },
+      {
+        path: '/blog',
+        element: <Blogpage />
+      }
     ],
   },
 
-  {
-    path: '*',
-    errorElement: <NotFound />,
-  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

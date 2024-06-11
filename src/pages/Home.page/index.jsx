@@ -8,11 +8,12 @@ import Autoplay from 'embla-carousel-autoplay';
 import WorkSpaceImage from '/workspace.png';
 import OurCultureImage from '/culture.png';
 import data from '../../data';
+import { Fragment } from 'react';
+import BlogCard from '../../components/card/blog-card';
 
 useEmblaCarousel.globalOptions = { loop: true };
 
 export default function Home() {
-  document.title += ' | Home';
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
     Autoplay({ playOnInit: true, delay: 5000 }),
   ]);
@@ -60,7 +61,7 @@ export default function Home() {
                   <h1 className='text-3xl font-bold md:text-6xl xl:text-7xl'>
                     <p>Unlocking Potential Through Technology</p>
                   </h1>
-                  <p className='mt-2 text-gray-200 text-md md:text-3xl'>
+                  <p className='mt-2 text-gray-200 lg:w-3/4 text-md md:text-3xl'>
                     Transforming {"Africa's"} Future: Inclusive ICT Skill
                     Acquisition and Technology Adoption
                   </p>
@@ -93,7 +94,7 @@ export default function Home() {
               <h2 className='mb-4 text-2xl font-bold text-center lg:text-3xl xl:text-left'>
                 Who We Are
               </h2>
-              <div className='flex flex-col xl:text-lg text-base xl:text-left gap-y-2'>
+              <div className='flex flex-col text-base xl:text-lg xl:text-left gap-y-2'>
                 <p>
                   D-Pia Innovations Limited began as a full fledged information
                   technology company but more recently has evolved into a
@@ -301,7 +302,7 @@ export default function Home() {
         </section>
         <section className='bg-[#001F6B] text-white py-10 lg:py-20 '>
           <div className='flex flex-col h-full gap-8 px-4 md:px-8 xl:px-40 xl:flex-row'>
-            <div className='flex flex-col justify-center h-full space-y-6 text-center xl:w-1/2'>
+            <div className='flex flex-col justify-center h-full space-y-6 text-center lg:text-left xl:w-1/2'>
               <h3 className='text-3xl font-semibold xl:text-4xl'>
                 Our Culture
               </h3>
@@ -339,44 +340,11 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className='flex flex-wrap w-full mt-12 xl:gap-16 gap-4'>
+          <div className='flex flex-wrap justify-center w-full gap-4 mt-12 xl:gap-16'>
             {data.map((item, idx) => (
-              <div
-                key={idx}
-                className='p-4 rounded-md hover:shadow h-fit border-2 border-gray-200'
-              >
-                <>
-                  <img src={item.image} className='w-72 xl:w-80 ' />
-                  <div className='w-[16.5em]  mt-4'>
-                    <h2 className='my-2 text-sm font-bold text-orange-600'>
-                      {item.title}
-                    </h2>
-                    <h3 className='text-xl font-semibold text-gray-900 line-clamp-2'>
-                      {item.heading}
-                    </h3>
-                    <p className='mt-1 font-medium text-gray-700 text-md line-clamp-3'>
-                      {item.body}
-                    </p>
-                    <div className='flex items-center gap-4 mt-6'>
-                      <div>
-                        <img
-                          src={item.author.image}
-                          alt={`author - ${item.author.name}'s profile`}
-                          className='object-cover rounded-full size-8 xl:size-12'
-                        />
-                      </div>
-                      <div className='flex flex-col'>
-                        <span className='font-bold max-sm:text-base'>
-                          {item.author.name}
-                        </span>
-                        <span className='font-semibold text-gray-500 max-sm:text-base'>
-                          {item.author.date}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </>
-              </div>
+              <Fragment key={idx}>
+                <BlogCard idx={idx} item={item} />
+              </Fragment>
             ))}
           </div>
         </section>

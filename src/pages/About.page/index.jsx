@@ -31,7 +31,7 @@ export default function About() {
 
       <section className='py-10 lg:py-20'>
         <div className='flex flex-wrap flex-col-reverse md:flex-row justify-between px-4 lg:px-20 xl:px-40 h-fit  text-[#0B4A6F] gap-y-12'>
-          <div className='w-full xl:w-1/2 hidden xl:block'>
+          <div className='hidden w-full xl:w-1/2 xl:block'>
             <img
               alt='Genesis layout image'
               src={Genesis}
@@ -108,7 +108,7 @@ export default function About() {
             />
           </div>
         </div>
-        <div className='flex items-center flex-col justify-between w-full xl:space-x-8'>
+        <div className='flex flex-col items-center justify-between w-full lg:flex-row xl:space-x-8'>
           <div className='hidden w-1/2 xl:block'>
             <img src={FadedImage} alt='dpia logo faded' className='w-[70%] ' />
           </div>
@@ -132,11 +132,11 @@ export default function About() {
             <h2 className='text-3xl font-bold md:text-4xl'>
               Organization Values
             </h2>
-            <p className=' text-lg xl:text-xl'>
+            <p className='text-lg  xl:text-xl'>
               At D-Pia, our core values define who we are and guide our actions
             </p>
           </div>
-          <div className='flex flex-row flex-wrap gap-4 lg:gap-6 xl:gap-8 mt-16'>
+          <div className='flex flex-row flex-wrap gap-4 mt-16 lg:gap-6 xl:gap-8'>
             {values.map((item) => {
               const { Icon } = item;
               return (
@@ -162,7 +162,7 @@ export default function About() {
       <section className='bg-[#001F6B] h-fit  py-10 lg:py-20 text-white mt-16'>
         <div className='flex flex-col items-center'>
           <div className='px-4 space-y-3 text-center xl:w-4/5 md:px-20 lg:px-40'>
-            <h2 className='text-xl lg:text-4xl font-semibold xl:text-5xl'>
+            <h2 className='text-xl font-semibold lg:text-4xl xl:text-5xl'>
               Meet the visionary minds steering D-Pia towards a future defined
               by innovation and excellence.
             </h2>

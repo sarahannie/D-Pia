@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div>
       <NavBar />
-      <main className='mt-14'>
+      <main className='antialiased mt-14'>
         {location.pathname === '/' ? <Home /> : <Outlet />}
       </main>
       <Footer />

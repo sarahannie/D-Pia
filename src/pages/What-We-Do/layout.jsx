@@ -16,7 +16,7 @@ export default function PageLayout() {
   }, [pathname]);
 
   return (
-    <div className='pt-4'>
+    <div className=''>
       {pathname === '/what-we-do' ? <CodeAcademy /> : <Outlet />}
     </div>
   );

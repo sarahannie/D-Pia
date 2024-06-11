@@ -31,7 +31,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link to='/blogs' onClick={() => navigate('/blogs')}>
+              <Link to='/blogs' onClick={() => navigate('/blog')}>
                 Blog
               </Link>
             </li>
