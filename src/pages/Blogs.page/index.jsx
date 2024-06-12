@@ -5,23 +5,27 @@ import { Fragment } from 'react'
 export default function Blogpage() {
 	return (
 		<section>
-			<section className='text-[#001F6B] bg-gray-100 py-10 lg:py-20 lg:px-40 px-4'>
+			<section className='text-[#001F6B] bg-gray-100 py-10 lg:py-20 md:px-20 xl:px-40 px-4'>
 				<div className='flex flex-col gap-8 text-center xl:text-left'>
 					<p className="text-[#C4320A] mx-auto xl:w-36 font-bold text-xl xl:mx-0">Our blog</p>
 					<h1 className='w-full text-3xl font-semibold lg:w-4/5 md:text-5xl'>
 						WELCOME TO OUR BLOG: GET INSIGHTS ON THE LATEST TRENDS
 					</h1>
-					<p className='w-full text-base xl:w-1/2 md:text-lg'>
-						The latest industry news, interviews, technologies, resources and more.
-					</p>
+
 				</div>
 			</section>
 			<section>
 				<div className='flex flex-col items-center justify-center mt-20'>
 					<div>
-						<img src={BlogHero} alt='blog header' className='rounded-md' />
+						<img src={BlogHero} alt='blog header' className='px-20 rounded-md' />
 					</div>
-					<div className='flex flex-wrap justify-center w-full gap-4 mt-12 xl:gap-16'>
+					<div className='py-8 font-bold text-center'>
+						<p className='text-[#C4320A] text-3xl'>Latest Blogs</p>
+						<p className='w-full text-base text-gray-700 xl:w-1/2 md:text-lg'>
+							The latest industry news, interviews, technologies, resources and more.
+						</p>
+					</div>
+					<div className='flex flex-wrap justify-center w-full gap-4 xl:gap-16'>
 						{extendedData.map((item, idx) => (
 							<Fragment key={idx}>
 								<BlogCard idx={idx} item={item} />
@@ -30,7 +34,7 @@ export default function Blogpage() {
 					</div>
 				</div>
 			</section>
-			<section className="px-4 py-20 md:px-40">
+			<section className="px-4 py-20 md:px-20 xl:px-40">
 				<div className='flex flex-col items-center justify-between w-full px-4 py-10 text-white bg-gray-800 lg:py-20 lg:px-16 rounded-3xl mt-28 lg:flex-row'>
 					<div>
 						<h3 className='text-3xl font-bold'>

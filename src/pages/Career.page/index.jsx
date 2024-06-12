@@ -5,7 +5,7 @@ import OurCultureImage from '/culture.png';
 export default function CareerPage() {
   return (
     <section>
-      <section className='bg-[#001F6B] text-white py-20 xl:px-40 px-4 lg:px-20'>
+      <section className='bg-[#001F6B] text-white py-20 xl:px-40 px-4 md:px-20'>
         <div className='flex flex-col gap-8 text-left'>
           <h1 className='w-full text-3xl font-semibold xl:w-3/5 xl:text-5xl'>
             <>CAREER OPPORTUNITIES AT D-PIA INNOVATIONS</>
@@ -28,13 +28,13 @@ export default function CareerPage() {
         </div>
       </section>
       <section>
-        <div className='py-14 text-[#13364b] px-4 lg:px-20 xl:px-40'>
+        <div className='py-14 text-[#13364b] px-4 md:px-20 xl:px-40'>
           <div className='flex flex-col items-center justify-center gap-y-8'>
             <div>
               <h2 className='text-3xl font-bold'>Why Choose D-pia?</h2>
             </div>
             <div className='flex flex-wrap justify-center gap-6 item-center'>
-              <div className='bg-white rounded-lg shadow-lg w-80'>
+              <div className='bg-white rounded-lg shadow-lg w-60 xl:w-72'>
                 <>
                   <img
                     src={InclusiveCulture}
@@ -50,7 +50,7 @@ export default function CareerPage() {
                   </p>
                 </div>
               </div>
-              <div className='bg-white rounded-md shadow-lg w-80'>
+              <div className='bg-white rounded-md shadow-lg w-60 xl:w-72'>
                 <>
                   <img
                     src={Innovation}
@@ -66,7 +66,7 @@ export default function CareerPage() {
                   </p>
                 </div>
               </div>
-              <div className='bg-white rounded-md shadow-lg w-80'>
+              <div className='bg-white rounded-md shadow-lg w-60 xl:w-72'>
                 <>
                   <img
                     src={Impact}
@@ -88,7 +88,7 @@ export default function CareerPage() {
       </section>
 
       <section className='bg-[#001F6B] text-white py-10 lg:py-20 '>
-        <div className='flex flex-col h-full gap-8 px-4 md:px-8 xl:px-40 xl:flex-row'>
+        <div className='flex flex-col h-full gap-8 px-4 md:px-20 xl:px-40 xl:flex-row'>
           <div className='flex flex-col justify-center h-full space-y-6 text-center lg:text-left xl:w-1/2'>
             <h3 className='text-3xl font-semibold xl:text-4xl'>Our Culture</h3>
             <p className='w-full text-md lg:text-xl'>
@@ -96,16 +96,16 @@ export default function CareerPage() {
               most significant challenges. When you join our team, you become a
               catalyst for change, a pioneer in the realm of possibility.
             </p>
-            <div className='flex gap-4'>
-              <button className='bg-white xl:w-36 font-semibold py-2 w-full text-xl rounded-md text-[#001F6B]'>
+            <div className='flex flex-row justify-center gap-4'>
+              <button className='bg-white w-36 font-semibold py-2 text-xl rounded-md text-[#001F6B]'>
                 Join Us
               </button>
-              <button className='bg-[#C4320A] xl:w-36 font-semibold py-2 w-full text-xl rounded-md '>
+              <button className='bg-[#C4320A] w-36 font-semibold py-2 text-xl rounded-md '>
                 Our Vision
               </button>
             </div>
           </div>
-          <div className='flex justify-center'>
+          <div className='justify-center hidden xl:flex'>
             <img src={OurCultureImage} className='rounded-md' />
           </div>
         </div>

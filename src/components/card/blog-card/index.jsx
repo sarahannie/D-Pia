@@ -9,8 +9,8 @@ export default function BlogCard({ item }) {
 			className='p-2 rounded-md hover:shadow h-fit group'
 		>
 			<Link to="/blogs" onClick={() => navigate('/blogs')}>
-				<img src={item.image} className='shadow-sm w-72 xl:w-[22em]' />
-				<div className='w-72 xl:w-[22em] mt-4'>
+				<img src={item.image} className='shadow-sm w-60 xl:w-[18em]' />
+				<div className='w-60 xl:w-[18em] mt-4'>
 					<h2 className='my-2 text-sm font-bold text-orange-600'>
 						{item.title}
 					</h2>

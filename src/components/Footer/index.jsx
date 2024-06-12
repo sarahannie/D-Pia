@@ -9,7 +9,7 @@ export default function Footer() {
           <img src={Logo2} alt='dpia innovations logo' />
         </div>
         <nav className=''>
-          <ul className='flex flex-wrap items-center gap-6 px-4 font-bold text-gray-500'>
+          <ul className='flex flex-wrap items-center justify-center gap-6 px-4 font-bold text-gray-500'>
             <li>
               <Link to='/who-we-are' onClick={() => navigate('/who-we-are')}>
                 About us

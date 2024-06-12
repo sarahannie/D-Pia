@@ -14,8 +14,8 @@ export default function About() {
 
   return (
     <section>
-      <section className='bg-[#F5FBFF] text-[#0B4A6F] py-20  px-4 lg:px-20 xl:px-40'>
-        <div className='flex flex-col gap-8 text-left'>
+      <section className='bg-[#F5FBFF] text-[#0B4A6F] py-20  px-4 md:px-20 xl:px-40'>
+        <div className='flex flex-col gap-8 text-center xl:text-left'>
           <h1 className='w-full text-3xl font-semibold xl:w-3/5 md:text-5xl'>
             Leading the Technological Revolution in Africa:
           </h1>
@@ -30,7 +30,7 @@ export default function About() {
       </section>
 
       <section className='py-10 lg:py-20'>
-        <div className='flex flex-wrap flex-col-reverse md:flex-row justify-between px-4 lg:px-20 xl:px-40 h-fit  text-[#0B4A6F] gap-y-12'>
+        <div className='flex flex-wrap flex-col-reverse md:flex-row justify-between px-4 md:px-20 xl:px-40 h-fit text-[#0B4A6F] gap-y-12'>
           <div className='hidden w-full xl:w-1/2 xl:block'>
             <img
               alt='Genesis layout image'
@@ -68,7 +68,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className='bg-[#001F6B] h-fit py-10 lg:py-20 flex flex-col text-white lg:px-20 xl:px-40 px-4 space-y-12'>
+      <section className='bg-[#001F6B] h-fit py-10 lg:py-20 flex flex-col text-white md:px-20 xl:px-40 px-4 space-y-12'>
         <div className='flex items-center justify-between w-full space-x-8'>
           <div className='flex flex-col space-y-4 xl:w-1/2'>
             <div>
@@ -127,22 +127,22 @@ export default function About() {
         </div>
       </section>
       <section>
-        <div className='px-4 mt-20 lg:px-20 xl:px-40'>
-          <div className='text-[#0B4A6F] space-y-2'>
+        <div className='px-4 mt-20 md:px-20 xl:px-40'>
+          <div className='text-[#0B4A6F] flex flex-col justify-center items-center space-y-2'>
             <h2 className='text-3xl font-bold md:text-4xl'>
               Organization Values
             </h2>
-            <p className='text-lg  xl:text-xl'>
+            <p className='text-lg xl:text-xl'>
               At D-Pia, our core values define who we are and guide our actions
             </p>
           </div>
-          <div className='flex flex-row flex-wrap gap-4 mt-16 lg:gap-6 xl:gap-8'>
+          <div className='flex flex-row flex-wrap justify-center gap-4 mt-16 lg:gap-6 xl:gap-8'>
             {values.map((item) => {
               const { Icon } = item;
               return (
                 <div
                   key={item.heading}
-                  className='w-full lg:w-[14em] xl:h-[18em] xl:w-[18em] h-[14em] shadow-md flex flex-col justify-between px-2 xl:px-6 py-4 bg-[#F5FBFF] text-[#0B4A6F]'
+                  className='w-full md:w-[14em] xl:h-[18em] xl:w-[18em] h-[14em] shadow-md flex flex-col justify-between px-2 xl:px-6 py-4 bg-[#F5FBFF] text-[#0B4A6F]'
                 >
                   <div className='flex items-center justify-center rounded-full shadow-sm bg-gray-300/50 size-12'>
                     <Icon className='text-orange-600 fill-yellow-200' />
@@ -281,11 +281,11 @@ export default function About() {
       <section className='bg-[#F5FBFF] text-[#0B4A6F] py-10 lg:py-20 px-4 md:px-20 xl:px-40'>
         <div className='flex flex-col items-center lg:flex-row h-fit lg:justify-between '>
           <div className='mb-8 lg:w-1/2 lg:mb-0'>
-            <p className='text-[#C4320A] font-bold text-sm md:text-xl mb-4'>
+            <p className='text-[#C4320A] font-bold text-center lg:text-left text-sm md:text-xl mb-4'>
               The Heartbeat of D-Pia
             </p>
-            <h3 className='text-4xl font-semibold lg:text-6xl'>Our People</h3>
-            <p className='mt-4 text-sm font-normal md:text-2xl'>
+            <h3 className='text-4xl font-semibold text-center lg:text-6xl lg:text-left'>Our People</h3>
+            <p className='mt-4 text-sm font-normal text-center md:text-2xl lg:text-left'>
               At D-Pia Innovations, our strength lies in our people — a
               community of dedicated individuals who share a common passion for
               technology, innovation, and making a positive impact. Our diverse
@@ -293,8 +293,8 @@ export default function About() {
               creating a vibrant and collaborative environment.
             </p>
           </div>
-          <div className='relative lg:ml-0'>
-            <img src={HR} className='w-[21em] rounded-md h-96 object-contain' />
+          <div className='relative hidden lg:ml-0 xl:block'>
+            <img src={HR} className='w-[21em] rounded-md h-96 object-contain ' />
             <div className='absolute bottom-0 flex flex-col p-2 space-y-2 font-semibold transform bg-gray-800 border-2 border-gray-100 rounded-md xl:-translate-x-1/2 w-[21em]  text-white xl:w-96 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 h-36 xl:transform-none xl:translate-y-0 xl:-left-24 lg:-bottom-4 '>
               <span>
                 &quot;The supportive culture here motivates me to push

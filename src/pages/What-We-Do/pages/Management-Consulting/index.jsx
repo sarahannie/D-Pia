@@ -1,8 +1,8 @@
 export default function ManagementConsulting() {
   return (
     <section>
-      <section className='bg-[#001F6B] text-white py-20 md:px-40 px-4'>
-        <div className='flex flex-col gap-8 text-left'>
+      <section className='bg-[#001F6B] text-white py-20 md:px-20 xl:px-40 px-4'>
+        <div className='flex flex-col gap-8 text-center lg:text-left'>
           <h1 className='w-full text-3xl font-semibold lg:w-3/5 md:text-5xl'>
             <span className='block w-full'>MANAGEMENT </span>
             <span>CONSULTING: </span>
@@ -14,10 +14,10 @@ export default function ManagementConsulting() {
           </p>
         </div>
       </section>
-      <section className='px-4 py-16 md:px-40'>
+      <section className='px-4 py-16 md:px-20 xl:px-40'>
         <>
-          <div className='flex justify-center w-full text-center'>
-            <h2 className='w-2/5 font-bold text-orange-600 md:text-lg'>
+          <div className='flex w-full text-center lg:justify-center'>
+            <h2 className='font-bold text-orange-600 lg:w-4/5 xl:w-2/5 lg:text-lg'>
               Unlock the full potential of your organisation with our tailored
               suite of services at D-Pia Management Consulting. We offer three
               major services designed to optimise operations and drive
@@ -25,7 +25,7 @@ export default function ManagementConsulting() {
             </h2>
           </div>
           <div className='flex flex-col w-full mt-12 gap-y-6'>
-            <div className='w-2/4 space-y-3'>
+            <div className='space-y-3 lg:w-2/4'>
               <h3 className='text-2xl font-semibold '>
                 Operational Excellence
               </h3>
@@ -39,7 +39,7 @@ export default function ManagementConsulting() {
               </p>
             </div>
 
-            <div className='w-2/4 space-y-3 md:ml-auto'>
+            <div className='space-y-3 lg:w-2/4 lg:ml-auto'>
               <h3 className='text-2xl font-semibold'>Process Documentation</h3>
               <p className='text-lg'>
                 Experience the power of comprehensive process documentation. We
@@ -49,7 +49,7 @@ export default function ManagementConsulting() {
                 roadmap for streamlined operations.
               </p>
             </div>
-            <div className='w-2/4 space-y-3 '>
+            <div className='space-y-3 lg:w-2/4 '>
               <h3 className='text-2xl font-semibold'>Process Improvement</h3>
               <p className='text-lg'>
                 Our Process Improvement service involves a thorough review of
@@ -60,7 +60,7 @@ export default function ManagementConsulting() {
               </p>
             </div>
 
-            <div className='w-2/4 space-y-3 md:ml-auto'>
+            <div className='space-y-3 lg:w-2/4 md:ml-auto'>
               <h3 className='text-2xl font-semibold'>
                 Organizational and Soft Skills Training
               </h3>
@@ -74,10 +74,10 @@ export default function ManagementConsulting() {
           </div>
         </>
       </section>
-      <section className='bg-[#001F6B] text-white py-20 md:px-40 px-4'>
-        <div className='flex flex-col items-center w-full md:flex-row '>
-          <div className='flex flex-col gap-8 text-left md:w-[45%]'>
-            <h3 className='w-full text-3xl font-semibold md:text-4xl'>
+      <section className='bg-[#001F6B] text-white py-20 md:px-20 xl:px-40 px-4'>
+        <div className='flex flex-col items-center w-full xl:flex-row '>
+          <div className='flex flex-col gap-8 text-left lg:w-[75%] xl:w-[45%]'>
+            <h3 className='w-full text-3xl font-semibold xl:text-4xl'>
               <span>
                 Success Story: Operational Excellence Training in 2022{' '}
               </span>
@@ -90,8 +90,8 @@ export default function ManagementConsulting() {
               bottom line.
             </p>
           </div>
-          <div className='flex ml-auto md:w-[55%] px-6'>
-            <p className='text-5xl text-center island-moments-regular'>
+          <div className='flex xl:ml-auto lg:w-[75%] xl:w-[55%] xl:px-6 mt-16'>
+            <p className='text-5xl xl:text-center island-moments-regular'>
               Choose D-Pia Management Consulting for unparalleled services that
               redefine operational excellence and drive success.
             </p>

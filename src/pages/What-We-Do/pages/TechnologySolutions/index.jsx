@@ -3,7 +3,7 @@ import TeamImage from '/join-team.png';
 export default function TechnologySolutions() {
   return (
     <section>
-      <section className='text-[#001F6B] bg-[#F5FBFF] py-10 lg:py-20 lg:px-40 px-4'>
+      <section className='text-[#001F6B] bg-[#F5FBFF] py-10 lg:py-20 md:px-20 xl:px-40 px-4'>
         <div className='flex flex-col gap-8 text-center xl:text-left'>
           <h1 className='w-full text-3xl font-semibold xl:w-3/5 md:text-5xl'>
             <span className='block w-full'>TECHNOLOGY </span>
@@ -72,8 +72,8 @@ export default function TechnologySolutions() {
           </div>
         </div>
       </section>
-      <section className=' lg:mt-28'>
-        <div className='flex flex-col flex-wrap items-center justify-between px-4 space-y-8 xl:px-40 xl:flex-row'>
+      <section className='lg:mt-28'>
+        <div className='flex flex-col flex-wrap items-center justify-between px-4 space-y-10 md:px-20 xl:px-40 xl:flex-row'>
           <div className='text-[#0B4A6F] flex flex-col xl:block space-y-4'>
             <h2 className='text-3xl font-bold text-center xl:text-4xl xl:text-left'>
               Join hands with D-Pia Technology Solutions
@@ -87,7 +87,7 @@ export default function TechnologySolutions() {
             </button>
           </div>
           <div>
-            <img src={TeamImage} alt='team image' className='w-96' />
+            <img src={TeamImage} alt='team image' className='hidden w-96 xl:block' />
           </div>
         </div>
       </section>

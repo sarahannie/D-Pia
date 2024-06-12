@@ -10,10 +10,12 @@ import OurCultureImage from '/culture.png';
 import data from '../../data';
 import { Fragment } from 'react';
 import BlogCard from '../../components/card/blog-card';
+import { useNavigate } from 'react-router-dom';
 
 useEmblaCarousel.globalOptions = { loop: true };
 
 export default function Home() {
+  const navigate = useNavigate()
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
     Autoplay({ playOnInit: true, delay: 5000 }),
   ]);
@@ -54,7 +56,7 @@ export default function Home() {
               className='w-full h-screen bg-no-repeat '
             />
           </div>
-          <div className='flex flex-col items-center justify-center gap-2 px-6 pt-20 xl:px-40'>
+          <div className='flex flex-col items-center justify-center gap-2 px-6 pt-20 md:px-20 xl:px-40'>
             <div className='flex flex-col items-center xl:flex-row'>
               <div className='w-full xl:w-4/5'>
                 <div className='flex flex-col gap-4 text-center text-white xl:text-left'>
@@ -89,7 +91,7 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div className='flex flex-wrap justify-between w-full gap-2 px-6 lg:px-40 py-10 lg:py-20 text-[#0B4A6F]'>
+          <div className='flex flex-wrap justify-between w-full gap-2 px-6 md:px-20 xl:px-40 py-10 lg:py-20 text-[#0B4A6F]'>
             <div className='w-full xl:w-[45%] text-balance lg:text-left'>
               <h2 className='mb-4 text-2xl font-bold text-center lg:text-3xl xl:text-left'>
                 Who We Are
@@ -135,7 +137,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className='flex flex-col items-center justify-center py-10 lg:py-20 px-4 xl:px-40 mb-8 text-[#0B4A6F]'>
+        <section className='flex flex-col items-center justify-center py-10 lg:py-20 px-4 md:px-20 xl:px-40 mb-8 text-[#0B4A6F]'>
           <div className='flex flex-col items-center w-full mb-8 text-sm text-center'>
             <p className='text-sm font-bold text-orange-600'>
               Training • Technology • Innovation
@@ -301,7 +303,7 @@ export default function Home() {
           </div>
         </section>
         <section className='bg-[#001F6B] text-white py-10 lg:py-20 '>
-          <div className='flex flex-col h-full gap-8 px-4 md:px-8 xl:px-40 xl:flex-row'>
+          <div className='flex flex-col h-full gap-8 px-4 md:px-20 xl:px-40 xl:flex-row'>
             <div className='flex flex-col justify-center h-full space-y-6 text-center lg:text-left xl:w-1/2'>
               <h3 className='text-3xl font-semibold xl:text-4xl'>
                 Our Culture
@@ -315,13 +317,13 @@ export default function Home() {
                 Join Us
               </button>
             </div>
-            <div className='flex justify-center'>
+            <div className='justify-center hidden xl:flex'>
               <img src={OurCultureImage} className='rounded-md' />
             </div>
           </div>
         </section>
-        <section className='flex flex-col items-center xl:justify-center py-10 lg:py-20 xl:px-40 px-4 mb-8 w-full text-[#0B4A6F] h-fit'>
-          <div className='flex flex-col items-center justify-between w-full lg:flex-row'>
+        <section className='flex flex-col items-center xl:justify-center py-10 lg:py-20 xl:px-40 md:px-20 px-4 mb-8 w-full text-[#0B4A6F] h-fit'>
+          <div className='flex flex-col items-center w-full justify-evenly md:flex-row'>
             <div className='flex flex-col w-full md:w-fit'>
               <h3 className='font-bold text-orange-600 md:text-sm text-md'>
                 Our blog
@@ -334,8 +336,8 @@ export default function Home() {
                 of technology.
               </p>
             </div>
-            <div className='w-full mt-8 xl:ml-auto lg:w-fit lg:mt-0'>
-              <button className='w-full p-3 text-gray-700 border-2 border-gray-400 rounded-md'>
+            <div className='mt-8 ml-auto lg:mt-0'>
+              <button className='p-3 text-gray-700 border-2 border-gray-400 rounded-md' onClick={() => navigate('/blog')}>
                 View All
               </button>
             </div>

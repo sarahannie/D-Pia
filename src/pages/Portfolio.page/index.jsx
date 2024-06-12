@@ -8,9 +8,9 @@ export default function PortfolioPage() {
 	const navigate = useNavigate()
 	return (
 		<section>
-			<section className='text-[#001F6B] bg-[#F5FBFF] py-10 lg:py-20 lg:px-40 px-4'>
+			<section className='text-[#001F6B] bg-[#F5FBFF] py-10 lg:py-20 md:px-20 xl:px-40 px-4'>
 				<div className='flex flex-col gap-8 text-center xl:text-left'>
-					<h1 className='w-full text-3xl font-semibold xl:w-2/4 md:text-5xl'>
+					<h1 className='w-full text-lg font-semibold xl:text-3xl xl:w-2/4 md:text-5xl'>
 						Welcome to the D-Pia Innovations Portfolio Page, where we proudly present a glimpse into our transformative solutions:
 					</h1>
 					<p className='w-full text-base xl:w-1/2 md:text-lg'>
@@ -104,12 +104,12 @@ export default function PortfolioPage() {
 				</div>
 			</section>
 			<section className='bg-gray-800 h-[70vh] flex items-center lg:mt-28'>
-				<div className='flex flex-col flex-wrap items-center justify-between px-4 space-y-8 xl:px-40 xl:flex-row'>
-					<div className='flex flex-col w-1/2 space-y-4 text-white xl:block'>
+				<div className='flex flex-wrap items-center justify-center w-full px-4 space-y-8 xl:justify-between xl:px-40 xl:flex-row'>
+					<div className='flex flex-col space-y-4 text-white xl:w-1/2 xl:block'>
 						<h2 className='text-3xl font-bold text-center xl:text-4xl xl:text-left'>
 							Join hands with D-Pia Technology Solutions
 						</h2>
-						<p className='w-3/4 text-lg text-center xl:text-xl xl:text-left'>
+						<p className='w-3/4 mx-auto text-lg text-center xl:text-xl xl:text-left'>
 							A transformative digital journey that aligns with your business
 							goals
 						</p>
@@ -117,8 +117,8 @@ export default function PortfolioPage() {
 							Contact us
 						</button>
 					</div>
-					<div>
-						<img src={TeamImage} alt='team image' className='w-96 xl:w-[32em]' />
+					<div className='hidden xl:block'>
+						<img src={TeamImage} alt='team image' className='xl:w-[32em] ' />
 					</div>
 				</div>
 			</section>
