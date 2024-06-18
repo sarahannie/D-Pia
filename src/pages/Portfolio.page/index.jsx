@@ -19,65 +19,72 @@ export default function PortfolioPage() {
 				</div>
 			</section>
 			<section className='my-12 lg:my-24'>
-				<div className=''>
-					<div className='flex items-center w-full bg-blue-500 lg:relative h-[65vh]'>
-						<div className='bg-[#001F6B] h-full w-1/2 bottom-0 hidden md:block'></div>
-						<div className='right-0 w-full h-full p-4 bg-blue-500 lg:relative lg:p-8 md:w-1/2'>
-							<div className='h-[10vh] absolute -top-12 right-0 hidden xl:block bg-amber-800/80 w-80'></div>
-							<div className='text-white'>
-								<h2 className='my-2 text-3xl font-bold lg:font-semibold lg:text-5xl'>
-									DEPROCURE: Revolutionizing Procurement
-								</h2>
-								<p className='my-2 text-md lg:text-lg'>
-									DeProcure stands as an end-to-end digital procurement suite meticulously designed to streamline and enhance the entire procurement process. From Vendor Pre-qualification/Onboarding to Vendor Payment Processing, DeProcure ensures a seamless journey. It boasts robust features, including Vendor Document Management, Vendor Performance Management, Staff Requisition Management, Order Fulfillment, Tendering and Bidding, Procurement Committee Meeting Management, and more. DeProcure is your comprehensive solution for efficient and effective procurement operations.
-								</p>
-								<div>
-									<button className='bg-[#C4320A] w-60 mx-auto xl:w-36 font-semibold py-3 text-xl xl:mx-0 rounded-md ' >
-										Explore
-									</button>
+				<div>
+					<div className='flex items-stretch w-full bg-blue-500 lg:relative h-fit'>
+						<div className='flex w-full'>
+							<div className='bg-[#001F6B] w-1/2 hidden md:flex md:flex-col'></div>
+							<div className='right-0 w-full h-full p-4 bg-blue-500 lg:relative lg:p-8 md:w-1/2'>
+								<div className='h-[10vh] absolute -top-12 right-0 hidden xl:block bg-amber-800/80 w-80'></div>
+								<div className='text-white'>
+									<h2 className='my-2 text-3xl font-bold lg:font-semibold lg:text-5xl'>
+										DEPROCURE: Revolutionizing Procurement
+									</h2>
+									<p className='my-2 text-md lg:text-lg'>
+										DeProcure stands as an end-to-end digital procurement suite meticulously designed to streamline and enhance the entire procurement process. From Vendor Pre-qualification/Onboarding to Vendor Payment Processing, DeProcure ensures a seamless journey. It boasts robust features, including Vendor Document Management, Vendor Performance Management, Staff Requisition Management, Order Fulfillment, Tendering and Bidding, Procurement Committee Meeting Management, and more. DeProcure is your comprehensive solution for efficient and effective procurement operations.
+									</p>
+									<div>
+										<button className='bg-[#C4320A] w-60 mx-auto xl:w-36 font-semibold py-3 text-xl xl:mx-0 rounded-md'>
+											Explore
+										</button>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div className='flex items-center w-full bg-blue-500 lg:relative h-[65vh]'>
-						<div className='right-0 w-full h-full p-4 bg-blue-500 lg:relative lg:p-8 md:w-1/2'>
-							<div className='text-white'>
-								<h2 className='w-3/4 my-3 text-3xl font-bold lg:font-semibold lg:text-5xl'>
-									LMS: Elevating Learning Experiences
-								</h2>
-								<p className='my-2 text-md lg:text-lg'>
-									A learning organization is a thriving organization. With our Learning Management System (LMS), we empower you to deploy e-learning courses tailored to your organization&apos;s unique needs. Whether you&apos;re looking to make in-house content accessible as a paid e-learning course or seeking to deploy personalized e-learning portals, our LMS is your gateway to fostering continuous learning within your organization.
-								</p>
-								<div>
-									<button className='bg-[#C4320A] w-60 mx-auto xl:w-36 font-semibold py-3 text-xl xl:mx-0 rounded-md '>
-										Explore
-									</button>
+					<div className='flex items-stretch w-full bg-blue-500 lg:relative h-fit'>
+						<div className='flex w-full'>
+							<div className='right-0 w-full h-full p-4 bg-blue-500 lg:relative lg:p-8 md:w-1/2'>
+								<div className='text-white'>
+									<h2 className='w-3/4 my-3 text-3xl font-bold lg:font-semibold lg:text-5xl'>
+										LMS: Elevating Learning Experiences
+									</h2>
+									<p className='my-2 text-md lg:text-lg'>
+										A learning organization is a thriving organization. With our Learning Management System (LMS), we empower you to deploy e-learning courses tailored to your organization&apos;s unique needs. Whether you&apos;re looking to make in-house content accessible as a paid e-learning course or seeking to deploy personalized e-learning portals, our LMS is your gateway to fostering continuous learning within your organization.
+									</p>
+									<div>
+										<button className='bg-[#C4320A] w-60 mx-auto xl:w-36 font-semibold py-3 text-xl xl:mx-0 rounded-md'>
+											Explore
+										</button>
+									</div>
 								</div>
 							</div>
+							<div className='bg-[#001F6B] w-1/2 hidden md:flex md:flex-col'></div>
 						</div>
-						<div className='bg-[#001F6B] h-full w-1/2 bottom-0 hidden md:block'></div>
 					</div>
-					<div className='flex items-center w-full bg-blue-500 lg:relative h-[65vh]'>
-						<div className='bg-[#001F6B] h-full w-1/2 bottom-0 hidden md:block'></div>
-						<div className='right-0 w-full h-full p-4 bg-blue-500 lg:relative lg:p-8 md:w-1/2'>
-							<div className='h-[10vh] absolute -top-12 right-0 hidden xl:block bg-amber-800/80 w-80'></div>
-							<div className='text-white'>
-								<h2 className='my-2 text-3xl font-bold lg:font-semibold lg:text-5xl'>
-									PRACT+ ENTERPRISE: Boosting Organizational Productivity
-								</h2>
-								<p className='my-4 text-md lg:text-lg'>
-									Productivity is the heartbeat of organizational success, and Pract+ Enterprise is the pulse that keeps it strong. This innovative solution enables managers to effortlessly track tasks assigned to their teams and monitor team members&apos; productivity. Tasks seamlessly link to company goals, making goal alignment a breeze. Recognizing and rewarding employees, along with facilitating peer reviews, is simplified through our intuitive point system. Pract+ Enterprise is your ally in achieving and surpassing organizational productivity goals.
-								</p>
-								<div>
-									<button className='bg-[#C4320A] w-60 mx-auto xl:w-36 font-semibold py-3 text-xl xl:mx-0 rounded-md '>
-										Explore
-									</button>
+					<div className='flex items-stretch w-full bg-blue-500 lg:relative h-fit'>
+						<div className='flex w-full'>
+							<div className='bg-[#001F6B] w-1/2 hidden md:flex md:flex-col'></div>
+							<div className='right-0 w-full h-full p-4 bg-blue-500 lg:relative lg:p-8 md:w-1/2'>
+								<div className='h-[10vh] absolute -top-12 right-0 hidden xl:block bg-amber-800/80 w-80'></div>
+								<div className='text-white'>
+									<h2 className='my-2 text-3xl font-bold lg:font-semibold lg:text-5xl'>
+										PRACT+ ENTERPRISE: Boosting Organizational Productivity
+									</h2>
+									<p className='my-4 text-md lg:text-lg'>
+										Productivity is the heartbeat of organizational success, and Pract+ Enterprise is the pulse that keeps it strong. This innovative solution enables managers to effortlessly track tasks assigned to their teams and monitor team members&apos; productivity. Tasks seamlessly link to company goals, making goal alignment a breeze. Recognizing and rewarding employees, along with facilitating peer reviews, is simplified through our intuitive point system. Pract+ Enterprise is your ally in achieving and surpassing organizational productivity goals.
+									</p>
+									<div>
+										<button className='bg-[#C4320A] w-60 mx-auto xl:w-36 font-semibold py-3 text-xl xl:mx-0 rounded-md'>
+											Explore
+										</button>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+
 			<section className='flex flex-col items-center justify-center pt-8 lg:pt-16 px-4 xl:px-40 mb-8 text-[#0B4A6F]'>
 				<div className='flex flex-col items-center w-full text-sm text-center'>
 					<p className='text-sm font-bold text-orange-600'>
