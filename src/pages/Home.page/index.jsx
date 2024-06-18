@@ -79,7 +79,7 @@ export default function Home() {
               <div className='flex flex-wrap justify-center gap-2 xl:gap-6 h-fit'>
                 {partners.map((_) => (
                   <div key={_.name}>
-                    <img src={_.image} className='object-cover h-20 p-4  rounded-md hover:border-2 border-[#001F6B] bg-white/90 transition-all duration-500 ease-out' />
+                    <img src={_.image} className='object-cover h-10 md:h-20 p-4  rounded-md hover:border-2 border-[#001F6B] bg-white/90 transition-all duration-500 ease-out' />
                   </div>
                 ))}
               </div>
