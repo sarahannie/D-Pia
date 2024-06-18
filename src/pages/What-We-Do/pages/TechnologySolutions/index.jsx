@@ -20,10 +20,10 @@ export default function TechnologySolutions() {
       </section>
       <section className='my-12 lg:my-24'>
         <div className=''>
-          <div className='flex items-center w-full bg-blue-500 lg:relative'>
-            <div className='bg-[#001F6B] h-[65vh] w-1/2 bottom-0 hidden md:block'></div>
-            <div className='right-0 w-full p-4 bg-blue-500 lg:relative lg:p-8 md:w-1/2 h-fit'>
-              <div className='h-[10vh] absolute -top-1/4 right-0 hidden xl:block bg-amber-800/80 w-80'></div>
+          <div className='flex items-center w-full bg-blue-500 lg:relative h-[65vh]'>
+            <div className='bg-[#001F6B] h-full w-1/2 bottom-0 hidden md:block'></div>
+            <div className='right-0 w-full h-full p-4 bg-blue-500 lg:relative lg:p-8 md:w-1/2'>
+              <div className='h-[10vh] absolute -top-12 right-0 hidden xl:block bg-amber-800/80 w-80'></div>
               <div className='text-white'>
                 <h2 className='my-2 text-3xl font-bold lg:font-semibold lg:text-5xl'>
                   Process Automation
@@ -46,9 +46,9 @@ export default function TechnologySolutions() {
               </div>
             </div>
           </div>
-          <div className='flex items-center w-full bg-blue-500 lg:relative'>
-            <div className='right-0 w-full p-4 bg-blue-500 lg:relative lg:p-8 md:w-1/2 h-fit'>
-              <div className='h-[10vh] lg:absolute lg:-bottom-1/4 left-0 hidden xl:block bg-amber-800/80 w-80'></div>
+          <div className='flex items-center w-full bg-blue-500 lg:relative h-[65vh]'>
+            <div className='right-0 w-full h-full p-4 bg-blue-500 lg:relative lg:p-8 md:w-1/2'>
+              <div className='h-[10vh] lg:absolute lg:-bottom-12 left-0 hidden xl:block bg-amber-800/80 w-80'></div>
               <div className='text-white'>
                 <h2 className='w-3/4 my-3 text-3xl font-bold lg:font-semibold lg:text-5xl'>
                   Mobile/ Web App Development
@@ -68,7 +68,7 @@ export default function TechnologySolutions() {
                 </ul>
               </div>
             </div>
-            <div className='bg-[#001F6B] h-[70vh] w-1/2 bottom-0 hidden md:block'></div>
+            <div className='bg-[#001F6B] h-full w-1/2 bottom-0 hidden md:block'></div>
           </div>
         </div>
       </section>
