@@ -6,7 +6,7 @@ export default function useClickOutside(ref, callback) {
 			if (ref && ref.current && !ref.current.contains(event.target)) {
 				setTimeout(() =>
 					callback()
-					, 2000)
+					, 3500)
 			}
 		}
 		document.addEventListener('click', handleClickOutside, true)
