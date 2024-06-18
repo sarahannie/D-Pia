@@ -1,4 +1,4 @@
-import HeroBackGround from '/hero-background-image.png';
+
 import HeroImage from '/dpia-hero.svg';
 import Persona1 from '/persona1.png';
 import useEmblaCarousel from 'embla-carousel-react';
@@ -11,6 +11,7 @@ import data from '../../data';
 import { Fragment } from 'react';
 import BlogCard from '../../components/card/blog-card';
 import { useNavigate } from 'react-router-dom';
+import { partners } from '../../data';
 
 useEmblaCarousel.globalOptions = { loop: true };
 
@@ -49,14 +50,9 @@ export default function Home() {
   return (
     <div>
       <section className=''>
-        <section className='relative h-screen'>
-          <div className='absolute w-full -z-30'>
-            <img
-              src={HeroBackGround}
-              className='w-full h-screen bg-no-repeat '
-            />
-          </div>
-          <div className='flex flex-col items-center justify-center gap-2 px-6 pt-20 md:px-20 xl:px-40'>
+        <section className={`relative h-fit  bg-hero-bg py-8 bg-fixed bg-no-repeat bg-cover object-fill`}>
+
+          <div className='flex flex-col items-center justify-center gap-2 px-6 md:px-20 xl:px-40'>
             <div className='flex flex-col items-center xl:flex-row'>
               <div className='w-full xl:w-4/5'>
                 <div className='flex flex-col gap-4 text-center text-white xl:text-left'>
@@ -81,9 +77,9 @@ export default function Home() {
                 Our Partners:
               </div>
               <div className='flex flex-wrap justify-center gap-2 xl:gap-6 h-fit'>
-                {Array.from({ length: 5 }).map((_, idx) => (
-                  <div key={idx}>
-                    <div className='w-40 h-12 bg-gray-400 rounded-md lg:h-16 xl:w-48'></div>
+                {partners.map((_) => (
+                  <div key={_.name}>
+                    <img src={_.image} className='object-cover h-20 p-4  rounded-md hover:border-2 border-[#001F6B] bg-white/90 transition-all duration-500 ease-out' />
                   </div>
                 ))}
               </div>
@@ -91,8 +87,8 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div className='flex flex-wrap justify-between w-full gap-2 px-6 md:px-20 xl:px-40 py-10 lg:py-20 text-[#0B4A6F]'>
-            <div className='w-full xl:w-[45%] text-balance lg:text-left'>
+          <div className='min-h-screen flex flex-wrap justify-between w-full gap-2 px-6 md:px-20 xl:px-40 py-10 lg:py-20 text-[#0B4A6F]'>
+            <div className='w-full lg:w-[45%] text-balance lg:text-left'>
               <h2 className='mb-4 text-2xl font-bold text-center lg:text-3xl xl:text-left'>
                 Who We Are
               </h2>
@@ -128,11 +124,11 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div className='w-full mt-8 xl:w-[50%] flex justify-center xl:mt-0'>
+            <div className='flex justify-center w-full mt-8 lg:w-[45%] xl:mt-0'>
               <img
                 alt='Persona layout image'
                 src={Persona1}
-                className='rounded-md h-fit'
+                className='object-contain rounded-md md:h-fit h-96'
               />
             </div>
           </div>
@@ -336,8 +332,8 @@ export default function Home() {
                 of technology.
               </p>
             </div>
-            <div className='mt-8 ml-auto lg:mt-0'>
-              <button className='p-3 text-gray-700 border-2 border-gray-400 rounded-md' onClick={() => navigate('/blog')}>
+            <div className='w-full mt-8 ml-auto md:w-fit lg:mt-0'>
+              <button className='w-full p-3 text-gray-700 border-2 border-gray-400 rounded-md' onClick={() => navigate('/blog')}>
                 View All
               </button>
             </div>

@@ -5,7 +5,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import About from './pages/About.page';
 import Home from './pages/Home.page';
 import NotFound from './pages/NotFound.page';
-// import NavBar from './components/Navbar';
 import App from './App';
 import PageLayout from './pages/What-We-Do/layout';
 import CodeAcademy from './pages/What-We-Do/pages/CodeAcademy';
@@ -36,19 +35,19 @@ const router = createBrowserRouter([
         children: [
           {
             index: true,
-            path: '/what-we-do/code-academy',
+            path: 'code-academy',
             element: <CodeAcademy />,
           },
           {
-            path: '/what-we-do/innovation-hub',
+            path: 'innovation-hub',
             element: <InnovationHub />,
           },
           {
-            path: '/what-we-do/management-consulting',
+            path: 'management-consulting',
             element: <ManagementConsulting />,
           },
           {
-            path: '/what-we-do/technology-solutions',
+            path: 'technology-solutions',
             element: <TechnologySolutions />,
           },
         ],
@@ -62,14 +61,13 @@ const router = createBrowserRouter([
         element: <PortfolioPage />
       },
       {
-        path: '*',
-        element: <NotFound />,
-        errorElement: <NotFound />,
-      },
-      {
         path: '/blog',
         element: <Blogpage />
-      }
+      },
+      {
+        path: '*',
+        element: <NotFound />,
+      },
     ],
   },
 

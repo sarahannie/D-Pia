@@ -8,7 +8,7 @@ export default function BlogCard({ item }) {
 		<div
 			className='p-2 rounded-md hover:shadow h-fit group'
 		>
-			<Link to="/blogs" onClick={() => navigate('/blogs')}>
+			<Link to="/blogs" onClick={() => navigate('/blog')}>
 				<img src={item.image} className='shadow-sm w-60 xl:w-[18em]' />
 				<div className='w-60 xl:w-[18em] mt-4'>
 					<h2 className='my-2 text-sm font-bold text-orange-600'>

@@ -4,6 +4,13 @@ import Card1 from '/card-image-1.png'
 import Card2 from '/card-image-2.png'
 import Card3 from '/card-image-3.png'
 import { Compass, Shield, Trophy, Lightbulb } from 'lucide-react'
+import stanbic_ibtc from '/Stanbic-ibtc-logo.png'
+import threemtt_logo from '/3mtt-logo.png'
+import anchor_logo from '/anchor-logo.png'
+import first_technical_logo from '/first-technical-logo.png'
+import sea_guard_marine_logo from '/sea-guard-marine-logo.png'
+
+
 const data = [{
 	image: Card1,
 	title: 'Skill Acquisition',
@@ -178,5 +185,25 @@ export const values = [
 		Icon: Lightbulb,
 		heading: "Innovation",
 		body: "Fostering a culture of creativity and embracing forward-thinking solutions"
+	}
+]
+
+export const partners = [
+	{
+		name: '3mtt',
+		image: threemtt_logo
+	}, {
+		name: 'anchor',
+		image: anchor_logo
+	},
+	{
+		name: 'first technical',
+		image: first_technical_logo
+	}, {
+		name: 'sea guard marine',
+		image: sea_guard_marine_logo
+	}, {
+		name: 'stanbic ibtc',
+		image: stanbic_ibtc
 	}
 ]

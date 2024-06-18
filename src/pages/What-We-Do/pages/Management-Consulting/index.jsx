@@ -24,8 +24,8 @@ export default function ManagementConsulting() {
               excellence
             </h2>
           </div>
-          <div className='flex flex-col w-full mt-12 gap-y-6'>
-            <div className='space-y-3 lg:w-2/4'>
+          <div className='flex flex-col w-full mt-12 gap-y-6 text-[#001F6B]'>
+            <div className='space-y-3 lg:w-2/4 '>
               <h3 className='text-2xl font-semibold '>
                 Operational Excellence
               </h3>
