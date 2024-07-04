@@ -61,7 +61,7 @@ const router = createBrowserRouter([
         element: <PortfolioPage />
       },
       {
-        path: '/blog',
+        path: 'https://dpiainnovations.com/blog/',
         element: <Blogpage />
       },
       {

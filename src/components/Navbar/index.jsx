@@ -20,6 +20,11 @@ export default function NavBar() {
     setIsOpen(false)
     setIsMenuOpen(false)
   }
+  const handleNavigations = (url) => {
+    window.location.href = url;
+  };
+
+
 
   return (
     <div>
@@ -37,13 +42,7 @@ export default function NavBar() {
         </div>
         <div className='flex flex-col items-center w-full xl:py-2 gap-y-2 lg:flex-row'>
 
-          <ul className='items-center hidden w-full gap-6 font-semibold text-blue-500 lg:flex'>
-
-            <li>
-              <Link to='/' onClick={() => handleNavigation('/')}>
-                Home
-              </Link>
-            </li>
+          <ul className='items-center mx-auto hidden w-full gap-6 font-semibold text-blue-500 lg:flex'>
             <li>
               <Link to='/who-we-are' onClick={() => handleNavigation('/who-we-are')}>
                 Who we are
@@ -95,9 +94,12 @@ export default function NavBar() {
               </Link>
             </li>
             <li>
-              <Link to='/blog' onClick={() => handleNavigation('/blog')}>
+              <a href='https://dpiainnovations.com/blog/' onClick={(e) => {
+          e.preventDefault();
+          handleNavigations('https://dpiainnovations.com/blog/');
+        }}>
                 Blog
-              </Link>
+              </a>
             </li>
             <li className='ml-auto'>
               <div >
@@ -169,9 +171,12 @@ export default function NavBar() {
                 </Link>
               </li>
               <li>
-                <Link to='/blog' onClick={() => handleNavigation('/blog')}>
-                  Blog
-                </Link>
+              <a href='https://dpiainnovations.com/blog/' onClick={(e) => {
+          e.preventDefault();
+          handleNavigations('https://dpiainnovations.com/blog/');
+        }}>
+                Blog
+              </a>
               </li>
               <li className='w-full p-3 font-semibold text-center text-blue-500 rounded-md bg-blue-100/95'>
                 < >
