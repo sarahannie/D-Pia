@@ -339,11 +339,12 @@ export default function Home() {
             </div>
           </div>
           <div className='flex flex-wrap justify-center w-full gap-4 mt-12 xl:gap-16'>
-            {data.map((item, idx) => (
+            {/* {data.map((item, idx) => (
               <Fragment key={idx}>
                 <BlogCard idx={idx} item={item} />
               </Fragment>
-            ))}
+            ))} */}
+            <BlogCard  />
           </div>
         </section>
       </section>
