@@ -37,12 +37,14 @@ export default function NavBar() {
             }
           </button>
           <Link to='/' onClick={() => handleNavigation('/')}>
-            <img src={Logo} className='object-contain h-8' alt='Logo' />
+            <img src={Logo} className='object-contain h-12 lg:hidden' alt='Logo' />
           </Link>
         </div>
-        <div className='flex flex-col items-center w-full xl:py-2 gap-y-2 lg:flex-row'>
-
-          <ul className='items-center mx-auto hidden w-full gap-6 font-semibold text-blue-500 lg:flex'>
+        <div className='hidden lg:flex lg:w-full lg:items-center lg:justify-between'>
+          <Link to='/' onClick={() => handleNavigation('/')}>
+            <img src={Logo} className='object-contain h-12' alt='Logo' />
+          </Link>
+          <ul className='flex items-center gap-6 font-semibold text-blue-500'>
             <li>
               <Link to='/who-we-are' onClick={() => handleNavigation('/who-we-are')}>
                 Who we are
@@ -56,33 +58,30 @@ export default function NavBar() {
               {isOpen && (
                 <div
                   ref={ref}
-                  className='absolute z-30 px-4 flex-wrap flex-row flex items-center justify-between bg-white border-2 rounded-md h-[14rem] w-[30rem] top-14'
+                  className='absolute z-30 flex flex-wrap items-center justify-between px-4 py-2 bg-white border-2 rounded-md top-14 w-[30rem] h-[14rem]'
                 >
-                  {
-                    //the error lies here, when i click on an element it doesnt navigate it just closes
-                    subPaths.map((data) => (
-                      <div key={data.name} className='w-fit group'>
-                        <div className='z-50 text-sm font-medium text-gray-700' onClick={(event) => event.stopPropagation()}>
-                          <Link to={data.to} onClick={(event) => {
-                            event.preventDefault()
-                            handleNavigation(data.to)
-                          }} className='font-bold text-blue-600'>
-                            <>
-                              {data.name}
-                            </>
-                            <p className='font-semibold text-gray-500 lg:w-52'>
-                              {data.description}
-                            </p>
-                          </Link>
-                        </div>
+                  {subPaths.map((data) => (
+                    <div key={data.name} className='w-fit group'>
+                      <div className='z-50 text-sm font-medium text-gray-700' onClick={(event) => event.stopPropagation()}>
+                        <Link
+                          to={data.to}
+                          onClick={(event) => {
+                            event.preventDefault();
+                            handleNavigation(data.to);
+                          }}
+                          className='font-bold text-blue-600'
+                        >
+                          <>
+                            {data.name}
+                          </>
+                          <p className='font-semibold text-gray-500 lg:w-52'>{data.description}</p>
+                        </Link>
                       </div>
-                    ))
-                  }
+                    </div>
+                  ))}
                 </div>
               )}
             </li>
-
-
             <li>
               <Link to='/career' onClick={() => handleNavigation('/career')}>
                 Career
@@ -94,24 +93,23 @@ export default function NavBar() {
               </Link>
             </li>
             <li>
-              <a href='https://dpiainnovations.com/blog/' onClick={(e) => {
-          e.preventDefault();
-          handleNavigations('https://dpiainnovations.com/blog/');
-        }}>
+              <a
+                href='https://dpiainnovations.com/blog/'
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleNavigations('https://dpiainnovations.com/blog/');
+                }}
+              >
                 Blog
               </a>
             </li>
-            <li className='ml-auto'>
-              <div >
-                <a
-                  className='p-3 font-semibold text-blue-500 rounded-md bg-blue-100/95'
-                  href='#'
-                >
-                  Get In Touch
-                </a>
-              </div>
-            </li>
           </ul>
+          <div>
+            <a className='p-3 font-semibold text-blue-500 rounded-md bg-blue-100/95' href='#'>
+              Get In Touch
+            </a>
+          </div>
+        </div>
           <div className='block w-full lg:hidden small'>
 
             <ul className={`flex-col items-center w-full gap-4 py-6 font-semibold h-full
@@ -190,7 +188,7 @@ export default function NavBar() {
               </li>
             </ul>
           </div>
-        </div>
+       
       </nav>
     </div>
   );
