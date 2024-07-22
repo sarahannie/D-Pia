@@ -14,6 +14,7 @@ import TechnologySolutions from './pages/What-We-Do/pages/TechnologySolutions';
 import CareerPage from './pages/Career.page';
 import PortfolioPage from './pages/Portfolio.page';
 import Blogpage from './pages/Blogs.page';
+import Contact from './pages/Contact.page';
 
 const router = createBrowserRouter([
   {
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
       {
         path: 'https://dpiainnovations.com/blog/',
         element: <Blogpage />
+      },
+      {
+        path: '/contact-us',
+        element: <Contact />
       },
       {
         path: '*',
