@@ -11,6 +11,11 @@ export default function CodeAcademy() {
       : ` | What We Do - ${pathname.split('/')[2]}`;
 
   document.title += title;
+  const handleClick = () => {
+    // Replace the URL below with your Google Survey form link
+    const surveyUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSeNisrIo9P04JJwiMsM_M8kDcvguUEcd8Evj5Zte2VxnAVtnQ/viewform';
+    window.open(surveyUrl, '_blank');
+  };
 
   return (
     <section>
@@ -73,7 +78,7 @@ export default function CodeAcademy() {
                     </ul>
                   </div>
                   <div>
-                    <button className='bg-[#C4320A] w-full lg:w-32 lg:ml-5 font-medium py-2 text-lg rounded-md mt-3 text-white'>
+                    <button className='bg-[#C4320A] w-full lg:w-32 lg:ml-5 font-medium py-2 text-lg rounded-md mt-3 text-white' onClick={handleClick}>
                       Enroll
                     </button>
                   </div>
@@ -139,7 +144,7 @@ export default function CodeAcademy() {
                     </div>
                   </div>
 
-                  <button className='bg-[#C4320A] w-full lg:w-32 lg:ml-5 font-medium py-2 text-lg rounded-md mt-3 text-white'>
+                  <button className='bg-[#C4320A] w-full lg:w-32 lg:ml-5 font-medium py-2 text-lg rounded-md mt-3 text-white' onClick={handleClick}>
                     Enroll
                   </button>
                 </div>
@@ -207,7 +212,7 @@ export default function CodeAcademy() {
             </p>
           </div>
           <>
-            <button className='bg-[#C4320A] w-full lg:w-32 px-4 font-medium py-2 text-lg rounded-md mt-3 text-white'>
+            <button className='bg-[#C4320A] w-full lg:w-32 px-4 font-medium py-2 text-lg rounded-md mt-3 text-white' onClick={handleClick}>
               Enroll
             </button>
           </>

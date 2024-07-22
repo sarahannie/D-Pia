@@ -105,9 +105,9 @@ export default function NavBar() {
             </li>
           </ul>
           <div>
-            <a className='p-3 font-semibold text-blue-500 rounded-md bg-blue-100/95' href='#'>
+            <Link className='p-3 font-semibold text-blue-500 rounded-md bg-blue-100/95' to='/contact-us' onClick={() => navigate('/contact-us')}>
               Get In Touch
-            </a>
+            </Link>
           </div>
         </div>
           <div className='block w-full lg:hidden small'>

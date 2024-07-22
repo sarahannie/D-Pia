@@ -10,7 +10,7 @@ import OurCultureImage from '/culture.png';
 import data from '../../data';
 import { Fragment } from 'react';
 import BlogCard from '../../components/card/blog-card';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { partners } from '../../data';
 
 useEmblaCarousel.globalOptions = { loop: true };
@@ -47,6 +47,12 @@ export default function Home() {
       .on('autoplay:stop', () => setIsPlaying(false))
       .on('reInit', () => setIsPlaying(autoplay.isPlaying()));
   }, [emblaApi]);
+
+  const handleClick = () => {
+    // Replace the URL below with your Google Survey form link
+    const surveyUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSeNisrIo9P04JJwiMsM_M8kDcvguUEcd8Evj5Zte2VxnAVtnQ/viewform';
+    window.open(surveyUrl, '_blank');
+  };
   return (
     <div>
       <section className=''>
@@ -63,8 +69,10 @@ export default function Home() {
                     Transforming {"Africa's"} Future: Inclusive ICT Skill
                     Acquisition and Technology Adoption
                   </p>
-                  <button className='bg-[#C4320A] w-60 mx-auto xl:w-36 font-semibold py-3 text-xl xl:mx-0 rounded-md '>
+                  <button className='bg-[#C4320A] w-60 mx-auto xl:w-36 font-semibold py-3 text-xl xl:mx-0 rounded-md'>
+                    <Link to='/contact-us' onClick={() => navigate('/contact-us')}>
                     Get In Touch
+                    </Link>
                   </button>
                 </div>
               </div>
@@ -309,7 +317,7 @@ export default function Home() {
                 most significant challenges. When you join our team, you become
                 a catalyst for change, a pioneer in the realm of possibility.
               </p>
-              <button className='bg-white xl:w-36 font-semibold py-3 w-full text-xl rounded-md text-[#001F6B]'>
+              <button className='bg-white xl:w-36 font-semibold py-3 w-full text-xl rounded-md text-[#001F6B]' onClick={handleClick}>
                 Join Us
               </button>
             </div>

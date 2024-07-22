@@ -13,17 +13,17 @@ const Contact = () => {
           phone: '',
           details: '',
         },
-        // validationSchema: Yup.object({
-        //   name: Yup.string()
-        //     .required('Please input your name'),
-        //   email: Yup.string()
-        //     .email('Invalid email address')
-        //     .required('Please input your email'),
-        //   phone: Yup.string()
-        //     .required('Please input your phone number'),
-        //   details: Yup.string()
-        //     .required('Please input your message'),
-        // }),
+        validationSchema: Yup.object({
+          name: Yup.string()
+            .required('Please input your name'),
+          email: Yup.string()
+            .email('Invalid email address')
+            .required('Please input your email'),
+          phone: Yup.string()
+            .required('Please input your phone number'),
+          details: Yup.string()
+            .required('Please input your message'),
+        }),
         onSubmit: (values) => {
             console.log('hello world')
           console.log('Form values:', values); // Debugging log
