@@ -22,9 +22,12 @@ export default function TechnologySolutions() {
         <div>
           <div className='flex items-stretch w-full bg-blue-500 lg:relative'>
             <div className='flex w-full'>
-              <div className='bg-[#001F6B] w-1/2 hidden md:flex md:flex-col'></div>
+              <div className='bg-[#001F6B] w-1/2 hidden md:flex md:flex-col'>
+              <img className="w-full h-[70vh] rounded-md"  src="https://img.freepik.com/free-photo/medium-shot-bored-people-working_23-2150697631.jpg?t=st=1727121062~exp=1727124662~hmac=debe0b69b1e710ff2feeefa17a93c0e33696e0232006314d841a9e97717252f8&w=900" alt="" />
+              </div>
               <div className='w-full p-4 bg-blue-500 lg:relative lg:p-8 md:w-1/2'>
-                <div className='h-[10vh] absolute -top-12 right-0 hidden xl:block bg-amber-800/80 w-80'></div>
+                <div className='h-[10vh] absolute -top-12 right-0 hidden xl:block bg-amber-800/80 w-80'>
+                </div>
                 <div className='text-white'>
                   <h2 className='my-2 text-3xl font-bold lg:font-semibold lg:text-5xl'>
                     Process Automation
@@ -51,7 +54,8 @@ export default function TechnologySolutions() {
           <div className='flex items-stretch w-full bg-blue-500 lg:relative'>
             <div className='flex w-full'>
               <div className='w-full p-4 bg-blue-500 lg:relative lg:p-8 md:w-1/2'>
-                <div className='h-[10vh] lg:absolute lg:-bottom-12 left-0 hidden xl:block bg-amber-800/80 w-80'></div>
+                <div className='h-[10vh] lg:absolute lg:-bottom-12 left-0 hidden xl:block bg-amber-800/80 w-80'>
+                </div>
                 <div className='text-white'>
                   <h2 className='w-3/4 my-3 text-3xl font-bold lg:font-semibold lg:text-5xl'>
                     Mobile/ Web App Development
@@ -71,7 +75,9 @@ export default function TechnologySolutions() {
                   </ul>
                 </div>
               </div>
-              <div className='bg-[#001F6B] w-1/2 hidden md:flex md:flex-col'></div>
+              <div className='bg-[#001F6B] w-1/2 hidden md:flex md:flex-col'>
+              <img className="w-full h-[70vh] rounded-md"  src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010138.jpg?t=st=1727121092~exp=1727124692~hmac=ff93ba8f93ea5cc55a082f419b184b56f3bd65dd3fe051a92ae3ceae89cdba71&w=900" alt="" />
+              </div>
             </div>
           </div>
         </div>

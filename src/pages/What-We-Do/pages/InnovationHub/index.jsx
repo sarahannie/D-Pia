@@ -5,7 +5,7 @@ import Icons from '../../../../components/Icons';
 export default function InnovationHub() {
   return (
     <section>
-      <section className='bg-[#001F6B] text-white py-20 xl:px-40 md:px-20 px-4'>
+      <section className='bg-[#F5FBFF]  text-[#0B4A6F] py-20 xl:px-40 md:px-20 px-4'>
         <div className='flex flex-col gap-8 text-center lg:text-left'>
           <h1 className='w-full text-3xl font-semibold lg:w-3/5 md:text-5xl'>
             <span className='block w-full'>INNOVATION HUB:</span>
@@ -27,7 +27,7 @@ export default function InnovationHub() {
           <div className='flex flex-col items-center gap-8 lg:flex-row'>
             <div className='w-full lg:w-1/2'>
               <img
-                src={WorkSpaceImage}
+                src='https://img.freepik.com/free-photo/top-view-people-working-together-office_23-2149762501.jpg?t=st=1727118313~exp=1727121913~hmac=72260d4bfdcc9e61e8e0a65282897ce30d7faf38a195f87291e735b09b7aa63a&w=900'
                 alt='summary image'
                 className='rounded-md h-fit'
               />

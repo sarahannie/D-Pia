@@ -95,7 +95,7 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div className='min-h-screen flex flex-wrap justify-between w-full gap-2 px-6 md:px-20 xl:px-40 py-10 lg:py-20 text-[#0B4A6F]'>
+          <div className=' flex flex-wrap justify-between w-full gap-2 px-6 md:px-20 xl:px-40 py-10 lg:py-20 text-[#0B4A6F]'>
             <div className='w-full lg:w-[45%] text-balance lg:text-left'>
               <h2 className='mb-4 text-2xl font-bold text-center lg:text-3xl xl:text-left'>
                 Who We Are
@@ -114,7 +114,7 @@ export default function Home() {
                   operational excellence initiatives for optimal positioning of
                   organizations
                 </p>
-                <p>
+                {/* <p>
                   Our vision is to become one of the top drivers of inclusive
                   ICT skill acquisition and technology adoption for education
                   and business in Africa. D-Pia Innovations is one of the 1000
@@ -126,23 +126,23 @@ export default function Home() {
                   The company started out in 2016 with the purpose to become one
                   of the top drivers of inclusive ICT skill acquisition and
                   technology adoption for education and business in Africa.
-                </p>
+                </p> */}
                 <button className='bg-[#C4320A] lg:w-32 font-medium py-2 text-lg rounded-md mt-3 text-white'>
                   Learn More
                 </button>
               </div>
             </div>
-            <div className='flex justify-center w-full mt-8 lg:w-[45%] xl:mt-0'>
+            <div className='flex justify-center w-full mt-2 lg:w-[45%] xl:mt-0'>
               <img
                 alt='Persona layout image'
-                src={Persona1}
-                className='object-contain rounded-md md:h-fit h-96'
+                src='https://img.freepik.com/free-photo/group-afro-americans-working-together_1303-8983.jpg?t=st=1725276945~exp=1725280545~hmac=31a3a38c9826c4c507fa8531c7c09cb645be4840eb459a45894680f2c0126689&w=900'
+                className='object-contain rounded-md md:h-fit h-196'
               />
             </div>
           </div>
         </section>
-        <section className='flex flex-col items-center justify-center py-10 lg:py-20 px-4 md:px-20 xl:px-40 mb-8 text-[#0B4A6F]'>
-          <div className='flex flex-col items-center w-full mb-8 text-sm text-center'>
+        <section className='flex flex-col items-center bg-[#d1e9ff] justify-center py-10 lg:pb-20 px-4 md:px-20 xl:px-40  text-[#0B4A6F]'>
+          <div className='flex flex-col items-center w-full mb-8 text-sm text-center py-8 '>
             <p className='text-sm font-bold text-orange-600'>
               Training • Technology • Innovation
             </p>
@@ -322,7 +322,7 @@ export default function Home() {
               </button>
             </div>
             <div className='justify-center hidden xl:flex'>
-              <img src={OurCultureImage} className='rounded-md' />
+              <img src='https://img.freepik.com/free-photo/top-view-people-working-together-office_23-2149762501.jpg?t=st=1727118313~exp=1727121913~hmac=72260d4bfdcc9e61e8e0a65282897ce30d7faf38a195f87291e735b09b7aa63a&w=900' width='450px' className='rounded-md' />
             </div>
           </div>
         </section>

@@ -136,7 +136,7 @@ export default function About() {
               At D-Pia, our core values define who we are and guide our actions
             </p>
           </div>
-          <div className='flex flex-row flex-wrap justify-center gap-4 mt-16 lg:gap-6 xl:gap-8'>
+          <div className='flex flex-row  justify-center gap-4 mt-16 lg:gap-6 xl:gap-8 xl:mb-12 lg:mb-5'>
             {values.map((item) => {
               const { Icon } = item;
               return (
@@ -159,7 +159,7 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className='bg-[#001F6B] h-fit  py-10 lg:py-20 text-white mt-16'>
+      {/* <section className='bg-[#001F6B] h-fit  py-10 lg:py-20 text-white mt-16'>
         <div className='flex flex-col items-center'>
           <div className='px-4 space-y-3 text-center xl:w-4/5 md:px-20 lg:px-40'>
             <h2 className='text-xl font-semibold lg:text-4xl xl:text-5xl'>
@@ -277,7 +277,7 @@ export default function About() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className='bg-[#F5FBFF] text-[#0B4A6F] py-10 lg:py-20 px-4 md:px-20 xl:px-40'>
         <div className='flex flex-col items-center lg:flex-row h-fit lg:justify-between '>
           <div className='mb-8 lg:w-1/2 lg:mb-0'>
@@ -294,7 +294,7 @@ export default function About() {
             </p>
           </div>
           <div className='relative hidden lg:ml-0 xl:block'>
-            <img src={HR} className='w-[21em] rounded-md h-96 object-contain ' />
+            <img src='https://img.freepik.com/free-photo/group-afro-americans-working-together_1303-8983.jpg?t=st=1727118606~exp=1727122206~hmac=29db1e9b123ebd7e23764ce88b3afb78d0b8a296ab2a8a20175631750638889f&w=900' className='w-[21em] rounded-md h-96 object-contain ' />
             <div className='absolute bottom-0 flex flex-col p-2 space-y-2 font-semibold transform bg-gray-800 border-2 border-gray-100 rounded-md xl:-translate-x-1/2 w-[21em]  text-white xl:w-96 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 h-36 xl:transform-none xl:translate-y-0 xl:-left-24 lg:-bottom-4 '>
               <span>
                 &quot;The supportive culture here motivates me to push

@@ -8,6 +8,7 @@ export default function ManagementConsulting() {
             <span>CONSULTING: </span>
             <span>Driving Organisational Excellence</span>
           </h1>
+          <img className="w-full h-[70vh] rounded-md"  src="https://img.freepik.com/free-photo/afro-american-man-suit-pitching-business-idea-female-colleague-office_1098-20607.jpg?t=st=1727118738~exp=1727122338~hmac=cf0e142d4c2f3b231d5b7f1fc21af7892f7f6aef55ee7aeb51af62949c5f6a0f&w=900" alt="" />
           <p className='w-full text-base lg:w-1/2 md:text-lg'>
             Experience a suite of essential services tailored to elevate your
             organizational efficiency and performance.
