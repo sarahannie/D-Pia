@@ -62,12 +62,12 @@ export default function Home() {
             <div className='flex flex-col items-center xl:flex-row'>
               <div className='w-full xl:w-4/5'>
                 <div className='flex flex-col gap-4 text-center text-white xl:text-left'>
-                  <h1 className='text-3xl font-bold md:text-6xl xl:text-7xl'>
-                    <p>Unlocking Potential Through Technology</p>
-                  </h1>
-                  <p className='mt-2 text-gray-200 lg:w-3/4 text-md md:text-3xl'>
-                    Transforming {"Africa's"} Future: Inclusive ICT Skill
-                    Acquisition and Technology Adoption
+                  <h2 className='text-2xl font-bold md:text-5xl xl:text-6xl'>
+                    <p>Unlocking Potentials Through Technology</p>
+                  </h2>
+                  <p className='mt-2 text-gray-200 lg:w-3/4 text-md md:text-xl'>
+                    
+                    Transforming {"Africa's"}  Future through Inclusive Technology Skills Acquisition and Technology Adoption for business and Education
                   </p>
                   <button className='bg-[#C4320A] w-60 mx-auto xl:w-36 font-semibold py-3 text-xl xl:mx-0 rounded-md'>
                     <Link to='/contact-us' onClick={() => navigate('/contact-us')}>
